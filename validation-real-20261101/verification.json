@@ -1,0 +1,123 @@
+{
+  "passed": true,
+  "frames": 10,
+  "coverage": {
+    "requests": 5,
+    "responses": 5,
+    "context12_true": 3,
+    "battle_log_true": 3,
+    "optional_long_104_nonnull": 2,
+    "errors": []
+  },
+  "session_closed": true,
+  "checks": [
+    "all bytes traced and bodies fully consumed",
+    "all requests re-encode exactly",
+    "raw BIN / JSONL / exported frames agree",
+    "all five response IDs match requests",
+    "native entry observations distinguish viewKind 6 and 7",
+    "optional_long_104 absent once and non-null twice in actual outgoing requests",
+    "response optional structures present and absent",
+    "receiver acknowledged all 10 frames"
+  ],
+  "optional_long_104": [
+    {
+      "sequence": 5,
+      "value": null,
+      "fields": [
+        {
+          "path": "battle_log_entry.has_long_104",
+          "encoding": "Bool",
+          "offset": 87,
+          "end_offset": 88,
+          "length": 1,
+          "hex": "00",
+          "value": false,
+          "bit": 0
+        }
+      ]
+    },
+    {
+      "sequence": 7,
+      "value": {
+        "high": 103,
+        "low": 167892
+      },
+      "fields": [
+        {
+          "path": "battle_log_entry.has_long_104",
+          "encoding": "Bool",
+          "offset": 99,
+          "end_offset": 100,
+          "length": 1,
+          "hex": "01",
+          "value": true,
+          "bit": 0
+        },
+        {
+          "path": "battle_log_entry.long_104.high",
+          "encoding": "UInt32BE",
+          "offset": 100,
+          "end_offset": 104,
+          "length": 4,
+          "hex": "00000067",
+          "value": 103
+        },
+        {
+          "path": "battle_log_entry.long_104.low",
+          "encoding": "UInt32BE",
+          "offset": 104,
+          "end_offset": 108,
+          "length": 4,
+          "hex": "00028fd4",
+          "value": 167892
+        }
+      ]
+    },
+    {
+      "sequence": 9,
+      "value": {
+        "high": 111,
+        "low": 577840
+      },
+      "fields": [
+        {
+          "path": "battle_log_entry.has_long_104",
+          "encoding": "Bool",
+          "offset": 80,
+          "end_offset": 81,
+          "length": 1,
+          "hex": "01",
+          "value": true,
+          "bit": 0
+        },
+        {
+          "path": "battle_log_entry.long_104.high",
+          "encoding": "UInt32BE",
+          "offset": 81,
+          "end_offset": 85,
+          "length": 4,
+          "hex": "0000006f",
+          "value": 111
+        },
+        {
+          "path": "battle_log_entry.long_104.low",
+          "encoding": "UInt32BE",
+          "offset": 85,
+          "end_offset": 89,
+          "length": 4,
+          "hex": "0008d130",
+          "value": 577840
+        }
+      ]
+    }
+  ],
+  "stop": {
+    "frames": 10,
+    "sentFrames": 10,
+    "receiverFlushedFrames": 10,
+    "errors": 0,
+    "skipped": 0,
+    "phase": "stopped"
+  }
+}

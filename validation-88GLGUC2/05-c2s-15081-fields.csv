@@ -1,0 +1,6 @@
+﻿path,encoding,offset,end_offset,length,bit,hex,value
+has_context12,Bool,0,1,1,0,00,false
+query_parameter,VInt,1,3,2,,9a4d,4954
+player_id.high,UInt32BE,3,7,4,,00000066,102
+player_id.low,UInt32BE,7,11,4,,007fb0c3,8368323
+has_battle_log_entry,Bool,11,12,1,0,00,false

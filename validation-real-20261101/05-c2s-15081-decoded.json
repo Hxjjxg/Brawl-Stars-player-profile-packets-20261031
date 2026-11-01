@@ -1,0 +1,77 @@
+{
+  "id": 15081,
+  "context12": [
+    3,
+    1,
+    3,
+    2,
+    2,
+    3,
+    3,
+    2,
+    1,
+    715,
+    4954,
+    -1
+  ],
+  "source": 737,
+  "query_parameter": 737,
+  "player_id": {
+    "high": 111,
+    "low": 5748119
+  },
+  "tag": "#VVL0CRCR",
+  "has_battle_log_entry": true,
+  "battle_log_entry": {
+    "int_0": 2,
+    "player_id": {
+      "high": 111,
+      "low": 5748119
+    },
+    "int_16": 1,
+    "bool_20": false,
+    "members": [
+      {
+        "data": {
+          "table": 16,
+          "instance": 1
+        },
+        "int_40": 737,
+        "int_56": -3,
+        "int_72": 11
+      }
+    ],
+    "int_88": 0,
+    "display": {
+      "name": "恭喜你，不能",
+      "int_16": 0,
+      "int_20": 28000000,
+      "int_24": 43000008,
+      "int_28": -1,
+      "int_32": 0,
+      "string_48": "",
+      "int_36": 0,
+      "int_40": 0,
+      "bool_64": true,
+      "int_68": 0,
+      "int_72": 0
+    },
+    "optional_long_104": null,
+    "data_112": {
+      "table": 28,
+      "instance": 1035
+    },
+    "data_120": {
+      "table": 28,
+      "instance": 659
+    },
+    "data_128": {
+      "table": 52,
+      "instance": 526
+    },
+    "list_136": [
+      7,
+      0
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "real request byte-for-byte regeneration",
+      "passed": true,
+      "samples": 5
+    },
+    {
+      "check": "real complete response parsing and UI identity/name/trophies/hero-count comparison",
+      "passed": true,
+      "samples": 4
+    },
+    {
+      "check": "original framed BIN / JSON sample / body export consistency and complete byte tracing",
+      "passed": true,
+      "samples": 9
+    },
+    {
+      "check": "optional context and battle-log native wire-order fixture plus truncation rejection",
+      "passed": true,
+      "evidence": "offline synthetic fixture; not a real-device branch capture"
+    },
+    {
+      "check": "unsigned player-ID low word carried by a signed VInt",
+      "passed": true,
+      "evidence": "offline boundary fixture"
+    },
+    {
+      "check": "optional structure code identity against saved current-device readback",
+      "passed": true,
+      "bytes": 1524,
+      "evidence": "read-only code identity, not a triggered optional packet"
+    },
+    {
+      "check": "standalone Python / JavaScript conversions, real vectors, unsigned boundaries and invalid tags",
+      "passed": true,
+      "vectors": 7
+    },
+    {
+      "check": "signed VInt boundary round-trips",
+      "passed": true
+    },
+    {
+      "check": "JavaScript syntax",
+      "passed": true
+    }
+  ],
+  "capture": {
+    "frames": 9,
+    "sent_frames": 9,
+    "receiver_flushed_frames": 9,
+    "errors": 0,
+    "historical_stop_phase": "stopped",
+    "receiver_session_closed": true,
+    "source_log": "capture\\captures\\lasercn-plain-1793455283193-24924-b2724da9\\lasercn-plain-1793455283193-24924.jsonl"
+  }
+}

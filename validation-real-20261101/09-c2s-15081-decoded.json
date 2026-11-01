@@ -1,0 +1,80 @@
+{
+  "id": 15081,
+  "context12": [
+    3,
+    1,
+    3,
+    2,
+    2,
+    3,
+    3,
+    2,
+    1,
+    715,
+    4954,
+    -1
+  ],
+  "source": 670,
+  "query_parameter": 670,
+  "player_id": {
+    "high": 111,
+    "low": 5655703
+  },
+  "tag": "#VJP0VC92",
+  "has_battle_log_entry": true,
+  "battle_log_entry": {
+    "int_0": 2,
+    "player_id": {
+      "high": 111,
+      "low": 5655703
+    },
+    "int_16": 1,
+    "bool_20": false,
+    "members": [
+      {
+        "data": {
+          "table": 16,
+          "instance": 43
+        },
+        "int_40": 670,
+        "int_56": -3,
+        "int_72": 11
+      }
+    ],
+    "int_88": 0,
+    "display": {
+      "name": "Brawl Stars",
+      "int_16": 0,
+      "int_20": 28000000,
+      "int_24": 43000011,
+      "int_28": -1,
+      "int_32": 0,
+      "string_48": "",
+      "int_36": 0,
+      "int_40": 0,
+      "bool_64": true,
+      "int_68": 0,
+      "int_72": 0
+    },
+    "optional_long_104": {
+      "high": 111,
+      "low": 577840
+    },
+    "data_112": {
+      "table": 28,
+      "instance": 786
+    },
+    "data_120": {
+      "table": 28,
+      "instance": 1403
+    },
+    "data_128": {
+      "table": 52,
+      "instance": 28
+    },
+    "list_136": [
+      5,
+      0
+    ]
+  }
+}

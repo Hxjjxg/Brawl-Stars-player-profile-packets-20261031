@@ -1,0 +1,367 @@
+{
+  "addr": "0xc373dc",
+  "code": "__int64 __fastcall sub_C373DC(_QWORD *a1)\n{\n  int v2; // w20\n  __int64 v3; // x0\n  __int64 v4; // x0\n  __int64 v5; // x21\n  __int64 v6; // x0\n  int v7; // w20\n  __int64 v8; // x0\n  __int64 v9; // x0\n  __int64 v10; // x21\n  __int64 v11; // x0\n  int v12; // w0\n  __int64 v13; // x0\n  __int64 v14; // x20\n  __int64 v15; // x0\n  int v16; // w20\n  __int64 v17; // x0\n  __int64 v18; // x0\n  __int64 v19; // x21\n  __int64 v20; // x0\n  __int64 v21; // x0\n  __int64 v22; // x1\n  __int64 v23; // x0\n  __int64 v24; // x20\n  __int64 v25; // x8\n  __int64 v26; // x0\n  __int64 v27; // x20\n  __int64 v28; // x8\n  __int64 v29; // x21\n  bool v30; // cc\n  _BOOL4 v31; // w8\n  __int64 v32; // x0\n  __int64 v33; // x0\n  __int64 v34; // x20\n  __int64 v35; // x0\n  __int64 v36; // x22\n  __int64 v37; // x0\n  __int64 v38; // x0\n  __int64 v39; // x21\n  unsigned int v40; // w22\n  unsigned int v41; // w20\n  __int64 v42; // x0\n  __int64 v43; // x21\n  __int64 v44; // x0\n  unsigned int v45; // w20\n  __int64 v46; // x0\n  __int64 v47; // x21\n  __int64 v48; // x0\n  __int64 v49; // x22\n  float v50; // s8\n  __int64 v51; // x0\n  __int64 v52; // x0\n  __int64 v53; // x21\n  __int64 v54; // x0\n  __int64 v55; // x21\n  __int64 v56; // x0\n  __int64 v57; // x22\n  int v58; // w0\n  __int64 v59; // x20\n  __int64 v60; // x0\n  __int64 v61; // x20\n  __int64 v62; // x0\n  __int64 v63; // x21\n  __int64 v64; // x0\n  __int64 v65; // x0\n  __int64 v66; // x20\n  __int64 v67; // x0\n  __int64 v68; // x0\n  __int64 v69; // x20\n  int v70; // w0\n  unsigned int v71; // w21\n  __int64 v72; // x0\n  __int64 v73; // x0\n  int v74; // w0\n  __int64 v75; // x0\n  __int64 v76; // x20\n  __int64 v77; // x0\n  __int64 v78; // x0\n  __int64 v79; // x20\n  __int64 v80; // x0\n  __int64 v81; // x0\n  __int64 v82; // x20\n  __int64 v83; // x0\n  __int64 v84; // x0\n  __int64 v85; // x21\n  __int64 v86; // x0\n  __int64 v87; // x0\n  __int64 v88; // x0\n  __int64 result; // x0\n  __int64 v90; // x20\n  __int64 v91; // x0\n  __int64 v92; // x19\n  __int64 v93; // x0\n  __int64 v94; // x0\n  __int64 v95; // x0\n  _BYTE v96[16]; // [xsp+0h] [xbp-70h] BYREF\n  _QWORD v97[2]; // [xsp+10h] [xbp-60h] BYREF\n  _QWORD v98[2]; // [xsp+20h] [xbp-50h] BYREF\n  _QWORD v99[2]; // [xsp+30h] [xbp-40h] BYREF\n  __int64 s1[2]; // [xsp+40h] [xbp-30h] BYREF\n  __int64 v101[2]; // [xsp+50h] [xbp-20h] BYREF\n\n  v2 = sub_18EAE70(*(_QWORD *)(a1[73] + 144LL), 12); /*0xc37408*/\n  if ( v2 ) /*0xc3740c*/\n  {\n    ((void (*)(_QWORD *__return_ptr, const char *, ...))dword_9DECFC)(v99, \"TID_RAID_BOSS_DIFFICULTY_%i\", v2 - 1); /*0xc37420*/\n    v3 = ((__int64 (__fastcall *)(_QWORD *))loc_164DF38)(v99); /*0xc37428*/\n    sub_9DC1A8(s1, v3); /*0xc37434*/\n    v4 = sub_C389BC(a1, 7); /*0xc37440*/\n    if ( !v4 ) /*0xc37444*/\n      goto LABEL_4; /*0xc37444*/\n    goto LABEL_3; /*0xc37444*/\n  }\n  sub_9DC128((int)s1, &s1_); /*0xc37a30*/\n  v4 = sub_C389BC(a1, 7); /*0xc37a3c*/\n  if ( v4 ) /*0xc37a40*/\n  {\nLABEL_3:\n    v5 = v4; /*0xc37448*/\n    ((void (__fastcall *)(__int64 *__return_ptr, void *, __int64))dword_9DECFC)(v101, &unk_31A1C3, 12); /*0xc3745c*/\n    v6 = ((__int64 (__fastcall *)(__int64 *))loc_164DF38)(v101); /*0xc37464*/\n    sub_935240(v5, &s1__3, v6); /*0xc37478*/\n    sub_9DC018(v101); /*0xc37480*/\n    sub_935240(v5, &unk_37B29E, s1); /*0xc37494*/\n  }\nLABEL_4:\n  sub_9DC018(s1); /*0xc37498*/\n  if ( v2 ) /*0xc374a0*/\n    sub_9DC018(v99); /*0xc374a8*/\n  v7 = sub_18EAE70(*(_QWORD *)(a1[73] + 144LL), 9); /*0xc374bc*/\n  if ( v7 ) /*0xc374c0*/\n  {\n    ((void (*)(_QWORD *__return_ptr, const char *, ...))dword_9DECFC)(v98, \"TID_RAID_BOSS_DIFFICULTY_%i\", v7 - 1); /*0xc374d4*/\n    v8 = ((__int64 (__fastcall *)(_QWORD *))loc_164DF38)(v98); /*0xc374dc*/\n    sub_9DC1A8(s1, v8); /*0xc374e8*/\n    v9 = sub_C389BC(a1, 5); /*0xc374f4*/\n    if ( !v9 ) /*0xc374f8*/\n      goto LABEL_9; /*0xc374f8*/\n    goto LABEL_8; /*0xc374f8*/\n  }\n  sub_9DC128((int)s1, &s1_); /*0xc37a54*/\n  v9 = sub_C389BC(a1, 5); /*0xc37a60*/\n  if ( v9 ) /*0xc37a64*/\n  {\nLABEL_8:\n    v10 = v9; /*0xc374fc*/\n    ((void (__fastcall *)(__int64 *__return_ptr, void *, __int64))dword_9DECFC)(v101, &unk_31A1C3, 9); /*0xc37510*/\n    v11 = ((__int64 (__fastcall *)(__int64 *))loc_164DF38)(v101); /*0xc37518*/\n    sub_935240(v10, &s1__3, v11); /*0xc3752c*/\n    sub_9DC018(v101); /*0xc37534*/\n    sub_935240(v10, &unk_37B29E, s1); /*0xc37548*/\n  }\nLABEL_9:\n  sub_9DC018(s1); /*0xc3754c*/\n  if ( v7 ) /*0xc37554*/\n    sub_9DC018(v98); /*0xc3755c*/\n  v12 = sub_18EAE70(*(_QWORD *)(a1[73] + 144LL), 15); /*0xc3756c*/\n  if ( v12 ) /*0xc37570*/\n  {\n    ((void (*)(__int64 *__return_ptr, const char *, ...))dword_9DECFC)(s1, \"%i\", v12); /*0xc37584*/\n    v13 = sub_C389BC(a1, 9); /*0xc37590*/\n    if ( !v13 ) /*0xc37594*/\n      goto LABEL_14; /*0xc37594*/\n    goto LABEL_13; /*0xc37594*/\n  }\n  sub_9DC128((int)s1, &s1_); /*0xc37a78*/\n  v13 = sub_C389BC(a1, 9); /*0xc37a84*/\n  if ( v13 ) /*0xc37a88*/\n  {\nLABEL_13:\n    v14 = v13; /*0xc37598*/\n    ((void (__fastcall *)(__int64 *__return_ptr, void *, __int64))dword_9DECFC)(v101, &unk_31A1C3, 15); /*0xc375ac*/\n    v15 = ((__int64 (__fastcall *)(__int64 *))loc_164DF38)(v101); /*0xc375b4*/\n    sub_935240(v14, &s1__3, v15); /*0xc375c8*/\n    sub_9DC018(v101); /*0xc375d0*/\n    sub_935240(v14, &unk_37B29E, s1); /*0xc375e4*/\n  }\nLABEL_14:\n  sub_9DC018(s1); /*0xc375e8*/\n  v16 = sub_18EAE70(*(_QWORD *)(a1[73] + 144LL), 16); /*0xc37600*/\n  if ( v16 ) /*0xc37604*/\n  {\n    ((void (*)(_QWORD *__return_ptr, const char *, ...))dword_9DECFC)(v97, \"TID_RAID_BOSS_DIFFICULTY_%i\", v16 - 1); /*0xc37618*/\n    v17 = ((__int64 (__fastcall *)(_QWORD *))loc_164DF38)(v97); /*0xc37620*/\n    sub_9DC1A8(s1, v17); /*0xc3762c*/\n    v18 = sub_C389BC(a1, 10); /*0xc37638*/\n    if ( !v18 ) /*0xc3763c*/\n      goto LABEL_17; /*0xc3763c*/\n    goto LABEL_16; /*0xc3763c*/\n  }\n  sub_9DC128((int)s1, &s1_); /*0xc37a9c*/\n  v18 = sub_C389BC(a1, 10); /*0xc37aa8*/\n  if ( v18 ) /*0xc37aac*/\n  {\nLABEL_16:\n    v19 = v18; /*0xc37640*/\n    ((void (__fastcall *)(__int64 *__return_ptr, void *, __int64))dword_9DECFC)(v101, &unk_31A1C3, 16); /*0xc37654*/\n    v20 = ((__int64 (__fastcall *)(__int64 *))loc_164DF38)(v101); /*0xc3765c*/\n    sub_935240(v19, &s1__3, v20); /*0xc37670*/\n    sub_9DC018(v101); /*0xc37678*/\n    sub_935240(v19, &unk_37B29E, s1); /*0xc3768c*/\n  }\nLABEL_17:\n  sub_9DC018(s1); /*0xc37690*/\n  if ( v16 ) /*0xc37698*/\n    sub_9DC018(v97); /*0xc376a0*/\n  if ( a1[61] ) /*0xc376a4*/\n  {\n    v21 = ((__int64 (*)(void))dword_149D664)(); /*0xc376ac*/\n    if ( v21 ) /*0xc376b0*/\n    {\n      v22 = v21; /*0xc376b4*/\n      v23 = a1[62]; /*0xc376b8*/\n      if ( v23 ) /*0xc376bc*/\n        sub_9327F8(v23, v22); /*0xc376c0*/\n    }\n    v24 = a1[61]; /*0xc376c4*/\n    if ( v24 ) /*0xc376c8*/\n    {\n      ((void (__fastcall *)(_QWORD, __int64))dword_149D474)(a1[61], v22); /*0xc376d0*/\n      __register_atfork(v24); /*0xc376d8*/\n    }\n    a1[61] = 0; /*0xc376dc*/\n  }\n  v25 = a1[34]; /*0xc376e0*/\n  a1[62] = 0; /*0xc376e4*/\n  v26 = ((__int64 (__fastcall *)(_QWORD, const char *, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD))loc_167F7F0)( /*0xc37708*/\n          *(_QWORD *)(v25 + 152),\n          \"stats_winstreak\",\n          0,\n          0,\n          0,\n          0,\n          0);\n  if ( v26 ) /*0xc3770c*/\n  {\n    v27 = v26; /*0xc37714*/\n    v28 = *(_QWORD *)(a1[73] + 144LL); /*0xc37718*/\n    v29 = *(_QWORD *)(v28 + 16); /*0xc3771c*/\n    v30 = !v29 || *(_DWORD *)(v28 + 80) <= 1; /*0xc37714*/\n    v31 = !v30; /*0xc3772c*/\n    *(_BYTE *)(v26 + 8) = v31; /*0xc37734*/\n    if ( v31 ) /*0xc37738*/\n    {\n      sub_14C6E64(v26); /*0xc37740*/\n      v32 = ((__int64 (__fastcall *)(void *))loc_164DD98)(&unk_37B28A); /*0xc3774c*/\n      sub_935240(v27, &s1__3, v32); /*0xc37760*/\n      if ( ((__int64 (__fastcall *)(_QWORD, __int64))dword_1770AD4)(0, v29) ) /*0xc3776c*/\n      {\n        v33 = sub_935010(v27, \"brawler_icon\"); /*0xc37784*/\n        if ( v33 ) /*0xc37788*/\n        {\n          v34 = v33; /*0xc37794*/\n          if ( sub_933A30(v33, \"icon_ph\") ) /*0xc37798*/\n          {\n            operator delete(&qword_48); /*0xc377a4*/\n            v36 = v35; /*0xc377ac*/\n            ((void (*)(void))loc_149D2C0)(); /*0xc377b0*/\n            a1[61] = v36; /*0xc377c4*/\n            ((void (__fastcall *)(__int64, _QWORD, _QWORD, double))dword_149D04C)(v36, 0, 0, 0.0); /*0xc377c8*/\n            v37 = ((__int64 (__fastcall *)(_QWORD))dword_149D664)(a1[61]); /*0xc377d0*/\n            sub_9349EC(v34, \"icon_ph\", v37); /*0xc377e4*/\n            a1[62] = v34; /*0xc377e8*/\n          }\n        }\n      }\n    }\n  }\n  v38 = ((__int64 (__fastcall *)(_QWORD, const char *, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD))loc_167F7F0)( /*0xc37810*/\n          *(_QWORD *)(a1[38] + 152LL),\n          \"stat_records\",\n          0,\n          0,\n          0,\n          0,\n          0);\n  if ( v38 ) /*0xc37814*/\n  {\n    v39 = v38; /*0xc3781c*/\n    v40 = sub_18EAE70(*(_QWORD *)(a1[73] + 144LL), 31); /*0xc37830*/\n    v41 = sub_18EAE70(*(_QWORD *)(a1[73] + 144LL), 32); /*0xc37844*/\n    ((void (__fastcall *)(__int64 *__return_ptr, _QWORD))qword_9DEE88[0])(v101, v40); /*0xc37850*/\n    sub_1682968(v101, v39, \"txt_points\", 0, 0, 0, 0, 0); /*0xc37878*/\n    sub_9DC018(v101); /*0xc37880*/\n    v42 = ((__int64 (__fastcall *)(__int64, const char *, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD))loc_167F7F0)( /*0xc378a4*/\n            v39,\n            \"icon_tier\",\n            0,\n            0,\n            0,\n            0,\n            0);\n    if ( v42 ) /*0xc378a8*/\n    {\n      v43 = v42; /*0xc378ac*/\n      if ( (v41 & 0x80000000) == 0 && (int)v41 < *(__int16 *)(v42 + 222) ) /*0xc378bc*/\n        sub_9342A0(v42, v41); /*0xc378c8*/\n      v44 = ((__int64 (__fastcall *)(_QWORD))loc_1690380)(v41); /*0xc378d0*/\n      sub_1682968(v44, v43, \"tier\", &s1__3, 0, 0, 0, 0); /*0xc378f8*/\n    }\n  }\n  v45 = sub_18EAE70(*(_QWORD *)(a1[73] + 144LL), 3); /*0xc37910*/\n  v46 = ((__int64 (__fastcall *)(_QWORD, const char *))loc_C0DC7C)(a1[35], \"current\"); /*0xc37920*/\n  if ( v46 ) /*0xc37924*/\n  {\n    v47 = v46; /*0xc37930*/\n    v48 = sub_935184(v46, &s1__3); /*0xc37934*/\n    if ( v48 ) /*0xc37938*/\n    {\n      v49 = v48; /*0xc37940*/\n      v50 = (*(float (__fastcall **)(__int64))(*(_QWORD *)v48 + 96LL))(v48); /*0xc37954*/\n      ((void (__fastcall *)(__int64 *__return_ptr, _QWORD))qword_9DEE88[0])(v101, v45); /*0xc37958*/\n      ((void (__fastcall *)(__int64, __int64 *))dword_8ED9FC)(v49, v101); /*0xc37964*/\n      sub_9DC018(v101); /*0xc3796c*/\n      v51 = sub_935010(v47, \"icon\"); /*0xc3797c*/\n      if ( v51 ) /*0xc37980*/\n        *(float *)(v51 + 32) = *(float *)(v51 + 32) /*0xc379a0*/\n                             + (float)((float)(v50 - ((float (__fastcall *)(__int64))dword_8EDBC4)(v49)) * 0.5);\n    }\n  }\n  v52 = ((__int64 (__fastcall *)(_QWORD, void *))loc_C0DC7C)(a1[35], &unk_2FD21C); /*0xc379b0*/\n  if ( !v52 ) /*0xc379b4*/\n  {\nLABEL_51:\n    v54 = ((__int64 (__fastcall *)(_QWORD, const char *))loc_C0DC7C)(a1[35], \"trophy_world_icon\"); /*0xc37a0c*/\n    if ( !v54 ) /*0xc37a1c*/\n      goto LABEL_67; /*0xc37a1c*/\n    goto LABEL_62; /*0xc37a1c*/\n  }\n  v53 = v52; /*0xc379bc*/\n  if ( (int)sub_18EAE70(*(_QWORD *)(a1[73] + 144LL), 4) > (int)v45 ) /*0xc379d0*/\n  {\n    ((void (__fastcall *)(__int64 *__return_ptr))qword_9DEE88[0])(v101); /*0xc379d8*/\n    sub_1682968(v101, v53, &s1__3, 0, 0, 0, 0, 0); /*0xc37a00*/\n    sub_9DC018(v101); /*0xc37a08*/\n    goto LABEL_51; /*0xc37a08*/\n  }\n  ((void (__fastcall *)(__int64, _QWORD))qword_8F0CD8)(v53, 0); /*0xc37abc*/\n  v54 = ((__int64 (__fastcall *)(_QWORD, const char *))loc_C0DC7C)(a1[35], \"trophy_world_icon\"); /*0xc37acc*/\n  if ( !v54 ) /*0xc37ad0*/\n    goto LABEL_67; /*0xc37ad0*/\nLABEL_62:\n  v55 = v54; /*0xc37ad4*/\n  v56 = sub_197A1B4(v45); /*0xc37adc*/\n  if ( v56 ) /*0xc37ae0*/\n  {\n    v57 = v56; /*0xc37ae8*/\n    v58 = sub_17D4CBC(v56, v45); /*0xc37aec*/\n    ((void (*)(__int64 *__return_ptr, const char *, ...))dword_9DECFC)(v101, \"TID_PLAYER_RANK_TIER_%i\", v58); /*0xc37b00*/\n    v59 = ((__int64 (__fastcall *)(__int64 *))loc_164DF38)(v101); /*0xc37b0c*/\n    sub_9DC018(v101); /*0xc37b14*/\n    sub_1682968(v59, v55, \"tier\", &s1__3, 0, 0, 0, 0); /*0xc37b40*/\n    sub_9DBD44(v101); /*0xc37b48*/\n    sub_9DBD44(s1); /*0xc37b50*/\n    sub_9DC128((int)v96, &s1__6); /*0xc37b60*/\n    sub_16830C4(v57 + 104, v96, v101, s1); /*0xc37b74*/\n    sub_9DC018(v96); /*0xc37b7c*/\n    if ( HIDWORD(v101[0]) && HIDWORD(s1[0]) ) /*0xc37b8c*/\n    {\n      sub_9DC128((int)v96, \"trophy_world_icon_ph\"); /*0xc37b9c*/\n      ((void (__fastcall *)(__int64, _BYTE *, __int64 *, __int64 *))loc_167F1D0)(v55, v96, v101, s1); /*0xc37bb0*/\n      sub_9DC018(v96); /*0xc37bb8*/\n    }\n    sub_9DC018(s1); /*0xc37bc0*/\n    sub_9DC018(v101); /*0xc37bc8*/\n  }\nLABEL_67:\n  v60 = ((__int64 (__fastcall *)(_QWORD, void *))loc_C0DC7C)(a1[34], &unk_33B9F5); /*0xc37bcc*/\n  if ( v60 ) /*0xc37bdc*/\n  {\n    v61 = v60; /*0xc37be8*/\n    v62 = sub_935010(v60, \"stat_3_container\"); /*0xc37bec*/\n    if ( v62 ) /*0xc37bf0*/\n    {\n      v63 = v62; /*0xc37bf8*/\n      v64 = sub_18EAE70(*(_QWORD *)(a1[73] + 144LL), 8); /*0xc37c04*/\n      ((void (__fastcall *)(__int64 *__return_ptr, __int64))qword_9DEE88[0])(v101, v64); /*0xc37c0c*/\n      sub_1682968(v101, v63, &unk_37B29E, 0, 0, 0, 0, 0); /*0xc37c34*/\n      sub_9DC018(v101); /*0xc37c3c*/\n    }\n    v65 = sub_935010(v61, \"stat_2_container\"); /*0xc37c4c*/\n    if ( v65 ) /*0xc37c50*/\n    {\n      v66 = v65; /*0xc37c58*/\n      v67 = sub_18EAE70(*(_QWORD *)(a1[73] + 144LL), 1); /*0xc37c64*/\n      ((void (__fastcall *)(__int64 *__return_ptr, __int64))qword_9DEE88[0])(v101, v67); /*0xc37c6c*/\n      sub_1682968(v101, v66, &unk_37B29E, 0, 0, 0, 0, 0); /*0xc37c94*/\n      sub_9DC018(v101); /*0xc37c9c*/\n      v68 = sub_935010(v66, \"icon_vs\"); /*0xc37cac*/\n      if ( v68 ) /*0xc37cb0*/\n      {\n        v69 = v68; /*0xc37cbc*/\n        v70 = ((__int64 (__fastcall *)(__int64, const char *))dword_930E4C)(v68, \"en\"); /*0xc37cc0*/\n        v71 = v70 & ~(v70 >> 31); /*0xc37cc4*/\n        v72 = ((__int64 (*)(void))dword_164E8FC)(); /*0xc37cc8*/\n        v73 = ((__int64 (__fastcall *)(__int64))dword_174EAAC)(v72); /*0xc37ccc*/\n        if ( (sub_9DCAB4(v73, \":-,!-&<m!H,:)?zH\") & 1) != 0 ) /*0xc37cdc*/\n        {\n          v74 = ((__int64 (__fastcall *)(__int64, const char *))dword_930E4C)(v69, \"cns\"); /*0xc37cec*/\n          if ( v74 >= 0 ) /*0xc37cf4*/\n            v71 = v74; /*0xc37cf4*/\n        }\n        sub_9342A0(v69, v71); /*0xc37d00*/\n      }\n    }\n  }\n  v75 = ((__int64 (__fastcall *)(_QWORD, const char *))loc_C0DC7C)(a1[36], \"current_elo\"); /*0xc37d10*/\n  if ( v75 ) /*0xc37d14*/\n  {\n    v76 = v75; /*0xc37d1c*/\n    v77 = sub_18EAE70(*(_QWORD *)(a1[73] + 144LL), 24); /*0xc37d28*/\n    ((void (__fastcall *)(__int64 *__return_ptr, __int64))qword_9DEE88[0])(v101, v77); /*0xc37d30*/\n    sub_1682968(v101, v76, &s1__3, 0, 0, 0, 0, 0); /*0xc37d58*/\n    sub_9DC018(v101); /*0xc37d60*/\n  }\n  v78 = ((__int64 (__fastcall *)(_QWORD, void *))loc_C0DC7C)(a1[36], &unk_2EDE9A); /*0xc37d70*/\n  if ( v78 ) /*0xc37d74*/\n  {\n    v79 = v78; /*0xc37d7c*/\n    v80 = sub_18EAE70(*(_QWORD *)(a1[73] + 144LL), 25); /*0xc37d88*/\n    ((void (__fastcall *)(__int64 *__return_ptr, __int64))qword_9DEE88[0])(v101, v80); /*0xc37d90*/\n    sub_1682968(v101, v79, &s1__3, 0, 0, 0, 0, 0); /*0xc37db8*/\n    sub_9DC018(v101); /*0xc37dc0*/\n  }\n  v81 = ((__int64 (__fastcall *)(_QWORD, void *))loc_C0DC7C)(a1[36], &unk_2FD224); /*0xc37dd0*/\n  if ( v81 )\n  {\n    v82 = v81; /*0xc37ddc*/\n    LODWORD(v83) = sub_18EAE70(*(_QWORD *)(a1[73] + 144LL), 23); /*0xc37de8*/\n    v83 = (int)v83 <= 1 ? 1LL : (unsigned int)v83;\n    v84 = ((__int64 (__fastcall *)(__int64))dword_176FDEC)(v83); /*0xc37df4*/\n    if ( v84 ) /*0xc37df8*/\n    {\n      v85 = v84; /*0xc37dfc*/\n      v86 = ((__int64 (*)(void))sub_17A84A4)(); /*0xc37e00*/\n      sub_934490(v82, v86); /*0xc37e0c*/\n      sub_17A84A4(v85); /*0xc37e14*/\n      sub_9DC998(s1, \"rank_\"); /*0xc37e28*/\n      sub_9DC988(v101, (int)s1, \"_text\"); /*0xc37e3c*/\n      v87 = sub_17A84C4(v85); /*0xc37e44*/\n      v88 = ((__int64 (__fastcall *)(__int64))qword_164DE18)(v87); /*0xc37e48*/\n      sub_9351E4(v82, v101, v88); /*0xc37e58*/\n      sub_9DC018(v101); /*0xc37e60*/\n      sub_9DC018(s1); /*0xc37e68*/\n    }\n  }\n  result = ((__int64 (__fastcall *)(_QWORD, void *))loc_C0DC7C)(a1[36], &unk_33BA00); /*0xc37e78*/\n  if ( result ) /*0xc37e7c*/\n  {\n    v90 = result; /*0xc37e84*/\n    LODWORD(v91) = sub_18EAE70(*(_QWORD *)(a1[73] + 144LL), 22); /*0xc37e90*/\n    if ( (int)v91 <= 1 ) /*0xc37e98*/\n      v91 = 1; /*0xc37e98*/\n    else\n      v91 = (unsigned int)v91; /*0xc37e98*/\n    result = ((__int64 (__fastcall *)(__int64))dword_176FDEC)(v91); /*0xc37e9c*/\n    if ( result ) /*0xc37ea0*/\n    {\n      v92 = result; /*0xc37ea4*/\n      v93 = sub_17A84A4(result); /*0xc37ea8*/\n      sub_934490(v90, v93); /*0xc37eb4*/\n      sub_17A84A4(v92); /*0xc37ebc*/\n      sub_9DC998(s1, \"rank_\"); /*0xc37ed0*/\n      sub_9DC988(v101, (int)s1, \"_text\"); /*0xc37ee4*/\n      v94 = sub_17A84C4(v92); /*0xc37eec*/\n      v95 = ((__int64 (__fastcall *)(__int64))qword_164DE18)(v94); /*0xc37ef0*/\n      sub_9351E4(v90, v101, v95); /*0xc37f00*/\n      sub_9DC018(v101); /*0xc37f08*/\n      return sub_9DC018(s1); /*0xc37f10*/\n    }\n  }\n  return result; /*0xc37f28*/\n}",
+  "line_count": 474,
+  "total_lines": 474,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x18eae70",
+      "name": "sub_18EAE70"
+    },
+    {
+      "addr": "0x9decfc",
+      "name": "dword_9DECFC"
+    },
+    {
+      "addr": "0x3584e4",
+      "name": "aTidRaidBossDif_1",
+      "string": "TID_RAID_BOSS_DIFFICULTY_%i"
+    },
+    {
+      "addr": "0x164df38",
+      "name": "loc_164DF38"
+    },
+    {
+      "addr": "0x9dc1a8",
+      "name": "sub_9DC1A8"
+    },
+    {
+      "addr": "0xc389bc",
+      "name": "sub_C389BC"
+    },
+    {
+      "addr": "0x9dc128",
+      "name": "sub_9DC128"
+    },
+    {
+      "addr": "0x36b9b8",
+      "name": "s1_"
+    },
+    {
+      "addr": "0x31a1c3",
+      "name": "unk_31A1C3"
+    },
+    {
+      "addr": "0x935240",
+      "name": "sub_935240"
+    },
+    {
+      "addr": "0x35c7d5",
+      "name": "s1__3"
+    },
+    {
+      "addr": "0x9dc018",
+      "name": "sub_9DC018"
+    },
+    {
+      "addr": "0x37b29e",
+      "name": "unk_37B29E"
+    },
+    {
+      "addr": "0x344e4c",
+      "name": "aI_7",
+      "string": "%i"
+    },
+    {
+      "addr": "0x149d664",
+      "name": "dword_149D664"
+    },
+    {
+      "addr": "0x9327f8",
+      "name": "sub_9327F8"
+    },
+    {
+      "addr": "0x149d474",
+      "name": "dword_149D474"
+    },
+    {
+      "addr": "0x1c7c790",
+      "name": ".__register_atfork"
+    },
+    {
+      "addr": "0x167f7f0",
+      "name": "loc_167F7F0"
+    },
+    {
+      "addr": "0x380d8a",
+      "name": "aStatsWinstreak",
+      "string": "stats_winstreak"
+    },
+    {
+      "addr": "0x14c6e64",
+      "name": "sub_14C6E64"
+    },
+    {
+      "addr": "0x164dd98",
+      "name": "loc_164DD98"
+    },
+    {
+      "addr": "0x37b28a",
+      "name": "unk_37B28A"
+    },
+    {
+      "addr": "0x935010",
+      "name": "sub_935010"
+    },
+    {
+      "addr": "0x3454d6",
+      "name": "aBrawlerIcon",
+      "string": "brawler_icon"
+    },
+    {
+      "addr": "0x1c7c7a0",
+      "name": "._ZdlPv"
+    },
+    {
+      "addr": "0x48",
+      "name": "qword_48"
+    },
+    {
+      "addr": "0x149d2c0",
+      "name": "loc_149D2C0"
+    },
+    {
+      "addr": "0x149d04c",
+      "name": "dword_149D04C"
+    },
+    {
+      "addr": "0x9349ec",
+      "name": "sub_9349EC"
+    },
+    {
+      "addr": "0x3289e5",
+      "name": "aIconPh",
+      "string": "icon_ph"
+    },
+    {
+      "addr": "0x933a30",
+      "name": "sub_933A30"
+    },
+    {
+      "addr": "0x1770ad4",
+      "name": "dword_1770AD4"
+    },
+    {
+      "addr": "0x34ea4d",
+      "name": "aStatRecords",
+      "string": "stat_records"
+    },
+    {
+      "addr": "0x9dee88",
+      "name": "qword_9DEE88"
+    },
+    {
+      "addr": "0x1682968",
+      "name": "sub_1682968"
+    },
+    {
+      "addr": "0x3675df",
+      "name": "aTxtPoints",
+      "string": "txt_points"
+    },
+    {
+      "addr": "0x34073a",
+      "name": "aIconTier",
+      "string": "icon_tier"
+    },
+    {
+      "addr": "0x9342a0",
+      "name": "sub_9342A0"
+    },
+    {
+      "addr": "0x1690380",
+      "name": "loc_1690380"
+    },
+    {
+      "addr": "0x3454d1",
+      "name": "aTier",
+      "string": "tier"
+    },
+    {
+      "addr": "0xc0dc7c",
+      "name": "loc_C0DC7C"
+    },
+    {
+      "addr": "0x3623eb",
+      "name": "aCurrent_0",
+      "string": "current"
+    },
+    {
+      "addr": "0x935184",
+      "name": "sub_935184"
+    },
+    {
+      "addr": "0x8ed9fc",
+      "name": "dword_8ED9FC"
+    },
+    {
+      "addr": "0x3404f5",
+      "name": "aIcon",
+      "string": "icon"
+    },
+    {
+      "addr": "0x8edbc4",
+      "name": "dword_8EDBC4"
+    },
+    {
+      "addr": "0x2fd21c",
+      "name": "unk_2FD21C"
+    },
+    {
+      "addr": "0x349d48",
+      "name": "aTrophyWorldIco_0",
+      "string": "trophy_world_icon"
+    },
+    {
+      "addr": "0x8f0cd8",
+      "name": "qword_8F0CD8"
+    },
+    {
+      "addr": "0x197a1b4",
+      "name": "sub_197A1B4"
+    },
+    {
+      "addr": "0x17d4cbc",
+      "name": "sub_17D4CBC"
+    },
+    {
+      "addr": "0x323c5f",
+      "name": "aTidPlayerRankT",
+      "string": "TID_PLAYER_RANK_TIER_%i"
+    },
+    {
+      "addr": "0x9dbd44",
+      "name": "sub_9DBD44"
+    },
+    {
+      "addr": "0x33b144",
+      "name": "s1__6"
+    },
+    {
+      "addr": "0x16830c4",
+      "name": "sub_16830C4"
+    },
+    {
+      "addr": "0x310472",
+      "name": "aTrophyWorldIco",
+      "string": "trophy_world_icon_ph"
+    },
+    {
+      "addr": "0x167f1d0",
+      "name": "loc_167F1D0"
+    },
+    {
+      "addr": "0x33b9f5",
+      "name": "unk_33B9F5"
+    },
+    {
+      "addr": "0x380d9a",
+      "name": "aStat3Container",
+      "string": "stat_3_container"
+    },
+    {
+      "addr": "0x31566d",
+      "name": "aStat2Container",
+      "string": "stat_2_container"
+    },
+    {
+      "addr": "0x31ed87",
+      "name": "aIconVs",
+      "string": "icon_vs"
+    },
+    {
+      "addr": "0x930e4c",
+      "name": "dword_930E4C"
+    },
+    {
+      "addr": "0x3675b5",
+      "name": "aEn",
+      "string": "en"
+    },
+    {
+      "addr": "0x164e8fc",
+      "name": "dword_164E8FC"
+    },
+    {
+      "addr": "0x174eaac",
+      "name": "dword_174EAAC"
+    },
+    {
+      "addr": "0x34e846",
+      "name": "aCns",
+      "string": "cns"
+    },
+    {
+      "addr": "0x9dcab4",
+      "name": "sub_9DCAB4"
+    },
+    {
+      "addr": "0x33b3e4",
+      "name": "aMHZh",
+      "string": ":-,!-&<m!H,:)?zH"
+    },
+    {
+      "addr": "0x358705",
+      "name": "aCurrentElo",
+      "string": "current_elo"
+    },
+    {
+      "addr": "0x2ede9a",
+      "name": "unk_2EDE9A"
+    },
+    {
+      "addr": "0x2fd224",
+      "name": "unk_2FD224"
+    },
+    {
+      "addr": "0x176fdec",
+      "name": "dword_176FDEC"
+    },
+    {
+      "addr": "0x17a84a4",
+      "name": "sub_17A84A4"
+    },
+    {
+      "addr": "0x934490",
+      "name": "sub_934490"
+    },
+    {
+      "addr": "0x9dc998",
+      "name": "sub_9DC998"
+    },
+    {
+      "addr": "0x3070bd",
+      "name": "aRank",
+      "string": "rank_"
+    },
+    {
+      "addr": "0x9dc988",
+      "name": "sub_9DC988"
+    },
+    {
+      "addr": "0x3454e3",
+      "name": "aText_2",
+      "string": "_text"
+    },
+    {
+      "addr": "0x17a84c4",
+      "name": "sub_17A84C4"
+    },
+    {
+      "addr": "0x164de18",
+      "name": "qword_164DE18"
+    },
+    {
+      "addr": "0x9351e4",
+      "name": "sub_9351E4"
+    },
+    {
+      "addr": "0x33ba00",
+      "name": "unk_33BA00"
+    }
+  ]
+}

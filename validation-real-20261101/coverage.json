@@ -1,0 +1,8 @@
+{
+  "requests": 5,
+  "responses": 5,
+  "context12_true": 3,
+  "battle_log_true": 3,
+  "optional_long_104_nonnull": 2,
+  "errors": []
+}

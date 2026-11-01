@@ -1,0 +1,147 @@
+[
+  {
+    "callsite": "0xc9233c",
+    "argument_setup": [
+      "c92328 mov w2, #3",
+      "c9232c mov x3, xzr",
+      "c92330 mov w4, wzr",
+      "c92334 mov x5, xzr"
+    ]
+  },
+  {
+    "callsite": "0xc95940",
+    "argument_setup": [
+      "c9592c mov w2, #3",
+      "c95930 mov x3, xzr",
+      "c95934 mov w4, wzr",
+      "c95938 mov x5, xzr"
+    ]
+  },
+  {
+    "callsite": "0xe1cda8",
+    "argument_setup": [
+      "e1cd94 mov w2, #4",
+      "e1cd98 mov x3, xzr",
+      "e1cd9c mov w4, wzr",
+      "e1cda0 mov x5, xzr"
+    ]
+  },
+  {
+    "callsite": "0xe21514",
+    "argument_setup": [
+      "e21500 mov w2, #5",
+      "e21504 mov x3, xzr",
+      "e21508 mov w4, wzr",
+      "e2150c mov x5, xzr"
+    ]
+  },
+  {
+    "callsite": "0xe21c14",
+    "argument_setup": [
+      "e21c00 mov w2, #5",
+      "e21c04 mov x3, xzr",
+      "e21c08 mov w4, wzr",
+      "e21c0c mov x5, xzr"
+    ]
+  },
+  {
+    "callsite": "0xe26d68",
+    "argument_setup": [
+      "e26d54 mov w2, #2",
+      "e26d58 mov x3, xzr",
+      "e26d5c mov w4, wzr",
+      "e26d60 mov x5, xzr"
+    ]
+  },
+  {
+    "callsite": "0xe344ec",
+    "argument_setup": [
+      "e344d8 mov w2, #4",
+      "e344dc mov x3, xzr",
+      "e344e0 mov w4, wzr",
+      "e344e4 mov x5, xzr"
+    ]
+  },
+  {
+    "callsite": "0x13633c0",
+    "argument_setup": [
+      "13633ac mov w2, #5",
+      "13633b0 mov x3, xzr",
+      "13633b4 mov w4, wzr",
+      "13633b8 mov x5, xzr"
+    ]
+  },
+  {
+    "callsite": "0x1363504",
+    "argument_setup": [
+      "13634f0 mov w2, #5",
+      "13634f4 mov x3, xzr",
+      "13634f8 mov w4, wzr",
+      "13634fc mov x5, xzr"
+    ]
+  },
+  {
+    "callsite": "0x145bb7c",
+    "argument_setup": [
+      "145bb68 mov w2, #4",
+      "145bb6c mov x3, xzr",
+      "145bb70 mov w4, wzr",
+      "145bb74 mov x5, xzr"
+    ]
+  },
+  {
+    "callsite": "0x1485be4",
+    "argument_setup": [
+      "1485bc0 ldr x5, [x19, #0x220]",
+      "1485bd8 cinc w2, w9, eq",
+      "1485bdc csel x3, x8, xzr, eq",
+      "1485be0 csel w4, w10, wzr, eq"
+    ]
+  },
+  {
+    "callsite": "0x149b118",
+    "argument_setup": [
+      "149b0fc mov x3, xzr",
+      "149b100 mov w4, wzr",
+      "149b104 mov x5, xzr",
+      "149b114 cinc w2, w8, eq"
+    ]
+  },
+  {
+    "callsite": "0x15598d0",
+    "argument_setup": [
+      "15598bc mov w2, #5",
+      "15598c0 mov x3, xzr",
+      "15598c4 mov w4, wzr",
+      "15598c8 mov x5, xzr"
+    ]
+  },
+  {
+    "callsite": "0x156cd00",
+    "argument_setup": [
+      "156cca8 mov w2, #-1",
+      "156ccec mov w2, #5",
+      "156ccf0 mov x3, xzr",
+      "156ccf4 mov w4, wzr",
+      "156ccf8 mov x5, xzr"
+    ]
+  },
+  {
+    "callsite": "0x1594cb4",
+    "argument_setup": [
+      "1594ca0 mov w2, #1",
+      "1594ca4 mov x3, xzr",
+      "1594ca8 mov w4, wzr",
+      "1594cac mov x5, xzr"
+    ]
+  },
+  {
+    "callsite": "0x1596228",
+    "argument_setup": [
+      "1596214 mov w2, #2",
+      "1596218 mov x3, xzr",
+      "159621c mov w4, wzr",
+      "1596220 mov x5, xzr"
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "package": "com.tencent.tmgp.supercell.brawlstars",
+  "version": "69.114.1",
+  "librarySha256": "7b643e1c97a9a4a2778b46d0a2e0c3dfd3598f84e36f68f94abfa3dc6bce3aff",
+  "targets": [
+    {
+      "id": 15081,
+      "direction": "send",
+      "vtable": 30936792,
+      "typeOffset": 26024800,
+      "typeHex": "205d8752c0035fd6",
+      "hookOffset": 26024308,
+      "hookHex": "fd7bbea9f44f01a9fd030091f30300aac617c497f40313aa888e40f8895240f9e00314aa3f0100f1082140f9e1079f1a"
+    },
+    {
+      "id": 24113,
+      "direction": "receive",
+      "vtable": 30937944,
+      "typeOffset": 26128532,
+      "typeHex": "20c68b52c0035fd6",
+      "hookOffset": 26128360,
+      "hookHex": "fd7bbea9f44f01a9fd030091f30300aa004840f9400100b42effff97744a40f9d40000b4801240f9400000b46f460e94"
+    }
+  ],
+  "layout": {
+    "messageStreamOffset": 8,
+    "streamLengthOffset": 20,
+    "streamCapacityOffset": 40,
+    "streamDataOffset": 56
+  }
+}

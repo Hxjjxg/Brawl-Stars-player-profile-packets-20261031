@@ -1,0 +1,34 @@
+{
+  "LaserCn69_SocketCapture.js": {
+    "sha256": "c116649f4c039a5d0a96abda4c1248e4e0738ac58afccaf90f3de359dcca666b",
+    "bytes": 16701
+  },
+  "receiver.py": {
+    "sha256": "b260f6a96de6e9e07281b8839d4072b0097f07071f5adb5f477b7605e2679050",
+    "bytes": 9908
+  },
+  "receiver-config.json": {
+    "sha256": "15082a514a1b568c575accfb2e316a9c04e155540459493e6fa2c3959010a044",
+    "bytes": 128
+  },
+  "profile.json": {
+    "sha256": "bb6814914dd96acaeb25b15b25546fe7128445aae0f0c456d0413b1d9e31fa4d",
+    "bytes": 4202
+  },
+  "start-receiver.ps1": {
+    "sha256": "9c1fadcd294603cb4215c7fe4d55b374d1fa474c64debc25e8c29d71e0271571",
+    "bytes": 1048
+  },
+  "setup-usb.ps1": {
+    "sha256": "01ba66566b1442e0268cdbbd01b2a469362e95ea3ded801432e998fdd52814e6",
+    "bytes": 875
+  },
+  "使用说明.md": {
+    "sha256": "db1ad1d8b32093d6a2d955206cdcdc192cfdca3bf7f14b9d368dda8d4b85280d",
+    "bytes": 3039
+  },
+  "verification.json": {
+    "sha256": "0094948f1aa85d992d2faae8a4452f88a1cac4e98937432878d7f78228fa88c9",
+    "bytes": 1401
+  }
+}

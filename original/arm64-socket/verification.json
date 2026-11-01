@@ -1,0 +1,36 @@
+{
+  "createdAt": "2026-10-22T09:03:53.954161+08:00",
+  "transport": "phone Frida Socket API -> ADB reverse -> Python standard-library TCP",
+  "pcFridaStarted": false,
+  "gameStartedOrInjectedThisIteration": false,
+  "phoneCaptureFilesWritten": false,
+  "realPhoneSocketAndHookVerified": false,
+  "adbReverseCreated": false,
+  "adbReverseBlocker": "device 10AF182G2600122 not found",
+  "checks": {
+    "javascriptSyntax": {
+      "passed": true,
+      "result": "passed"
+    },
+    "phoneMock": {
+      "passed": true,
+      "result": "PASS: phone socket mock handshake before hooks, 12 hook points, outgoing/incoming snapshots, ACK accounting, no phone writes, no body logs, auth/fingerprint rejection, transport-only mode, disconnect cleanup."
+    },
+    "realTcpReceiverSynthetic": {
+      "passed": true,
+      "result": "PASS: real TCP streaming, split writes, exact JSONL/BIN, per-frame disk-flush ACK, empty/UTF8 bodies, token redaction, authentication rejection, traversal rejection, status/control."
+    }
+  },
+  "runningReceiver": {
+    "service": "lasercn-jsonl-v1",
+    "listening": true,
+    "connections": 0,
+    "activeConnections": 0,
+    "frames": 0,
+    "lastSession": null,
+    "lastPhase": null,
+    "lastError": null,
+    "port": 28469,
+    "output": "D:\\Codex\\2026-10-21\\d-codex-lasercn-laser-cn-rust\\outputs\\arm64-socket\\captures"
+  }
+}

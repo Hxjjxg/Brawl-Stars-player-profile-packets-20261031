@@ -1,0 +1,125 @@
+{
+  "package": "com.tencent.tmgp.supercell.brawlstars",
+  "version": "69.114.1",
+  "librarySha256": "7b643e1c97a9a4a2778b46d0a2e0c3dfd3598f84e36f68f94abfa3dc6bce3aff",
+  "targets": [
+    {
+      "id": 10100,
+      "direction": "send",
+      "vtable": 30649632,
+      "typeOffset": 20663704,
+      "typeHex": "80ee8452c0035fd6",
+      "hookOffset": 20663144,
+      "hookHex": "fd7bbea9f30b00f9fd030091f30300aa498bd897619240b9602200913977d597619640b9602200913677d597619a40b9"
+    },
+    {
+      "id": 10101,
+      "direction": "send",
+      "vtable": 30920168,
+      "typeOffset": 20663812,
+      "typeHex": "a0ee8452c0035fd6",
+      "hookOffset": 25845060,
+      "hookHex": "fd7bbea9f30b00f9fd030091f30300aad2c6c497615e40f96022009194b8c197616240f96022009115b1c19761ca40b9"
+    },
+    {
+      "id": 12541,
+      "direction": "send",
+      "vtable": 30924952,
+      "typeOffset": 25897336,
+      "typeHex": "a01f8652c0035fd6",
+      "hookOffset": 25897132,
+      "hookHex": "fd7bbea9f30b00f9fd030091f30300aaf893c4976072029161220091e093bf97680640f9619240b960220091084540f9"
+    },
+    {
+      "id": 14049,
+      "direction": "send",
+      "vtable": 30924792,
+      "typeOffset": 25896552,
+      "typeHex": "20dc8652c0035fd6",
+      "hookOffset": 25896420,
+      "hookHex": "fd7bbea9f30b00f9fd030091f30300aaaa94c497688e40f861220291021140f9e00313aaf30b40f9fd7bc2a840001fd6"
+    },
+    {
+      "id": 14358,
+      "direction": "send",
+      "vtable": 30926872,
+      "typeOffset": 25911716,
+      "typeHex": "c0028752c0035fd6",
+      "hookOffset": 25911584,
+      "hookHex": "fd7bbea9f30b00f9fd030091f30300aadb85c497619240b9602200913c74c197619640b9602200913974c197619a40b9"
+    },
+    {
+      "id": 14371,
+      "direction": "send",
+      "vtable": 30925592,
+      "typeOffset": 25902468,
+      "typeHex": "60048752c0035fd6",
+      "hookOffset": 25902272,
+      "hookHex": "fd7bbea9f30b00f9fd030091f30300aaf38ec4976022009161420291bc78c1976182423960220091487ac19761a640b9"
+    },
+    {
+      "id": 20100,
+      "direction": "receive",
+      "vtable": 29976192,
+      "typeOffset": 11629656,
+      "typeHex": "80d08952c0035fd6",
+      "hookOffset": 11629568,
+      "hookHex": "fd7bbea9f30b00f9fd030091f30300aa2401fb97602200910ceff797e103002a609a00b960220091027d80521beff797"
+    },
+    {
+      "id": 20103,
+      "direction": "receive",
+      "vtable": 30919912,
+      "typeOffset": 25844352,
+      "typeHex": "e0d08952c0035fd6",
+      "hookOffset": 25842448,
+      "hookHex": "ff4301d1fd7b01a9f71300f9f65703a9f44f04a9fd430091f30300aa5dc9c497602200913bb6c19701749752609200b9"
+    },
+    {
+      "id": 20104,
+      "direction": "receive",
+      "vtable": 30920312,
+      "typeOffset": 25851792,
+      "typeHex": "00d18952c0035fd6",
+      "hookOffset": 25850240,
+      "hookHex": "fd7bbca9f70b00f9f65702a9f44f03a9fd030091f30300aac2c1c497602200911fafc197604a00f9602200911cafc197"
+    },
+    {
+      "id": 24104,
+      "direction": "receive",
+      "vtable": 30937784,
+      "typeOffset": 26125236,
+      "typeHex": "00c58b52c0035fd6",
+      "hookOffset": 26125168,
+      "hookHex": "fd7bbea9f30b00f9fd030091f30300aa48b5c397602200917ca4c097609200b96022009179a4c097609600b960220091"
+    },
+    {
+      "id": 24124,
+      "direction": "receive",
+      "vtable": 30925992,
+      "typeOffset": 25907852,
+      "typeHex": "80c78b52c0035fd6",
+      "hookOffset": 25907732,
+      "hookHex": "fd7bbea9f30b00f9fd030091f30300aa9f89c497001280525d1d0f9400e4006f282080521f0800b908900079e87f60b2"
+    },
+    {
+      "id": 24131,
+      "direction": "receive",
+      "vtable": 30927032,
+      "typeOffset": 25912624,
+      "typeHex": "60c88b52c0035fd6",
+      "hookOffset": 25912372,
+      "hookHex": "fd7bbca9f70b00f9f65702a9f44f03a9fd030091f30300aa1585c497602200914974c197609200b9602200914674c197"
+    }
+  ],
+  "layout": {
+    "messageStreamOffset": 8,
+    "streamLengthOffset": 20,
+    "streamCapacityOffset": 40,
+    "streamDataOffset": 56
+  },
+  "joinCodeUi": {
+    "offset": 14904972,
+    "hex": "ff4301d1fd7b02a9f65703a9f44f04a9fd8300915f080071f30300aac00500545f0400710108005469f240f9e8430091"
+  }
+}

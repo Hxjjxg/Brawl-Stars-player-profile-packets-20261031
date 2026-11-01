@@ -1,0 +1,4 @@
+# Preserve exact artifact bytes so manifest hashes survive checkout.
+* -text
+*.bin binary
+*.png binary

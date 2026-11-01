@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "F:\cn-bs-lib_v69\player-profile-packets-20261031\capture\attach_capture.py", line 13, in <module>
+    session = device.attach(args.pid)
+  File "F:\frida16\Lib\site-packages\frida\core.py", line 86, in wrapper
+    return f(*args, **kwargs)
+  File "F:\frida16\Lib\site-packages\frida\core.py", line 1071, in attach
+    return Session(self._impl.attach(self._pid_of(target), **kwargs))  # type: ignore
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+frida.TransportError: connection closed

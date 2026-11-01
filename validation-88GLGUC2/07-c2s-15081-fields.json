@@ -1,0 +1,60 @@
+{
+  "fields": [
+    {
+      "path": "has_context12",
+      "encoding": "Bool",
+      "offset": 0,
+      "end_offset": 1,
+      "length": 1,
+      "hex": "00",
+      "value": false,
+      "bit": 0
+    },
+    {
+      "path": "query_parameter",
+      "encoding": "VInt",
+      "offset": 1,
+      "end_offset": 2,
+      "length": 1,
+      "hex": "00",
+      "value": 0
+    },
+    {
+      "path": "player_id.high",
+      "encoding": "UInt32BE",
+      "offset": 2,
+      "end_offset": 6,
+      "length": 4,
+      "hex": "0000006d",
+      "value": 109
+    },
+    {
+      "path": "player_id.low",
+      "encoding": "UInt32BE",
+      "offset": 6,
+      "end_offset": 10,
+      "length": 4,
+      "hex": "0094a818",
+      "value": 9742360
+    },
+    {
+      "path": "has_battle_log_entry",
+      "encoding": "Bool",
+      "offset": 10,
+      "end_offset": 11,
+      "length": 1,
+      "hex": "00",
+      "value": false,
+      "bit": 0
+    }
+  ],
+  "spans": [
+    {
+      "path": "player_id",
+      "start_cursor": 2,
+      "start_bit_cursor": 0,
+      "end_cursor": 10,
+      "end_bit_cursor": 0
+    }
+  ]
+}

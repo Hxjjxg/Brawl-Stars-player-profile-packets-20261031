@@ -1,0 +1,593 @@
+{
+  "fields": [
+    {
+      "path": "has_context12",
+      "encoding": "Bool",
+      "offset": 0,
+      "end_offset": 1,
+      "length": 1,
+      "hex": "01",
+      "value": true,
+      "bit": 0
+    },
+    {
+      "path": "context12[0]",
+      "encoding": "VInt",
+      "offset": 1,
+      "end_offset": 2,
+      "length": 1,
+      "hex": "03",
+      "value": 3
+    },
+    {
+      "path": "context12[1]",
+      "encoding": "VInt",
+      "offset": 2,
+      "end_offset": 3,
+      "length": 1,
+      "hex": "01",
+      "value": 1
+    },
+    {
+      "path": "context12[2]",
+      "encoding": "VInt",
+      "offset": 3,
+      "end_offset": 4,
+      "length": 1,
+      "hex": "03",
+      "value": 3
+    },
+    {
+      "path": "context12[3]",
+      "encoding": "VInt",
+      "offset": 4,
+      "end_offset": 5,
+      "length": 1,
+      "hex": "02",
+      "value": 2
+    },
+    {
+      "path": "context12[4]",
+      "encoding": "VInt",
+      "offset": 5,
+      "end_offset": 6,
+      "length": 1,
+      "hex": "02",
+      "value": 2
+    },
+    {
+      "path": "context12[5]",
+      "encoding": "VInt",
+      "offset": 6,
+      "end_offset": 7,
+      "length": 1,
+      "hex": "03",
+      "value": 3
+    },
+    {
+      "path": "context12[6]",
+      "encoding": "VInt",
+      "offset": 7,
+      "end_offset": 8,
+      "length": 1,
+      "hex": "03",
+      "value": 3
+    },
+    {
+      "path": "context12[7]",
+      "encoding": "VInt",
+      "offset": 8,
+      "end_offset": 9,
+      "length": 1,
+      "hex": "02",
+      "value": 2
+    },
+    {
+      "path": "context12[8]",
+      "encoding": "VInt",
+      "offset": 9,
+      "end_offset": 10,
+      "length": 1,
+      "hex": "01",
+      "value": 1
+    },
+    {
+      "path": "context12[9]",
+      "encoding": "VInt",
+      "offset": 10,
+      "end_offset": 12,
+      "length": 2,
+      "hex": "8b0b",
+      "value": 715
+    },
+    {
+      "path": "context12[10]",
+      "encoding": "VInt",
+      "offset": 12,
+      "end_offset": 14,
+      "length": 2,
+      "hex": "9a4d",
+      "value": 4954
+    },
+    {
+      "path": "context12[11]",
+      "encoding": "VInt",
+      "offset": 14,
+      "end_offset": 15,
+      "length": 1,
+      "hex": "7f",
+      "value": -1
+    },
+    {
+      "path": "query_parameter",
+      "encoding": "VInt",
+      "offset": 15,
+      "end_offset": 17,
+      "length": 2,
+      "hex": "be0b",
+      "value": 766
+    },
+    {
+      "path": "player_id.high",
+      "encoding": "UInt32BE",
+      "offset": 17,
+      "end_offset": 21,
+      "length": 4,
+      "hex": "0000006f",
+      "value": 111
+    },
+    {
+      "path": "player_id.low",
+      "encoding": "UInt32BE",
+      "offset": 21,
+      "end_offset": 25,
+      "length": 4,
+      "hex": "005671f6",
+      "value": 5665270
+    },
+    {
+      "path": "has_battle_log_entry",
+      "encoding": "Bool",
+      "offset": 25,
+      "end_offset": 26,
+      "length": 1,
+      "hex": "01",
+      "value": true,
+      "bit": 0
+    },
+    {
+      "path": "battle_log_entry.int_0",
+      "encoding": "VInt",
+      "offset": 26,
+      "end_offset": 27,
+      "length": 1,
+      "hex": "02",
+      "value": 2
+    },
+    {
+      "path": "battle_log_entry.player_id.high",
+      "encoding": "UInt32BE",
+      "offset": 27,
+      "end_offset": 31,
+      "length": 4,
+      "hex": "0000006f",
+      "value": 111
+    },
+    {
+      "path": "battle_log_entry.player_id.low",
+      "encoding": "UInt32BE",
+      "offset": 31,
+      "end_offset": 35,
+      "length": 4,
+      "hex": "005671f6",
+      "value": 5665270
+    },
+    {
+      "path": "battle_log_entry.int_16",
+      "encoding": "VInt",
+      "offset": 35,
+      "end_offset": 36,
+      "length": 1,
+      "hex": "01",
+      "value": 1
+    },
+    {
+      "path": "battle_log_entry.bool_20",
+      "encoding": "Bool",
+      "offset": 36,
+      "end_offset": 37,
+      "length": 1,
+      "hex": "00",
+      "value": false,
+      "bit": 0
+    },
+    {
+      "path": "battle_log_entry.members.count",
+      "encoding": "VInt",
+      "offset": 37,
+      "end_offset": 38,
+      "length": 1,
+      "hex": "01",
+      "value": 1
+    },
+    {
+      "path": "battle_log_entry.members[0].data.table",
+      "encoding": "VInt",
+      "offset": 38,
+      "end_offset": 39,
+      "length": 1,
+      "hex": "10",
+      "value": 16
+    },
+    {
+      "path": "battle_log_entry.members[0].data.instance",
+      "encoding": "VInt",
+      "offset": 39,
+      "end_offset": 40,
+      "length": 1,
+      "hex": "14",
+      "value": 20
+    },
+    {
+      "path": "battle_log_entry.members[0].int_40",
+      "encoding": "VInt",
+      "offset": 40,
+      "end_offset": 42,
+      "length": 2,
+      "hex": "be0b",
+      "value": 766
+    },
+    {
+      "path": "battle_log_entry.members[0].int_56",
+      "encoding": "VInt",
+      "offset": 42,
+      "end_offset": 43,
+      "length": 1,
+      "hex": "7d",
+      "value": -3
+    },
+    {
+      "path": "battle_log_entry.members[0].int_72",
+      "encoding": "VInt",
+      "offset": 43,
+      "end_offset": 44,
+      "length": 1,
+      "hex": "0b",
+      "value": 11
+    },
+    {
+      "path": "battle_log_entry.int_88",
+      "encoding": "VInt",
+      "offset": 44,
+      "end_offset": 45,
+      "length": 1,
+      "hex": "00",
+      "value": 0
+    },
+    {
+      "path": "battle_log_entry.display.name",
+      "encoding": "String",
+      "offset": 45,
+      "end_offset": 79,
+      "length": 34,
+      "hex": "0000001ee59394e593a9e59394e593a9efbd9eefbd9ee5bf97e6b094e5878ce4ba91",
+      "value": "哔哩哔哩～～志气凌云"
+    },
+    {
+      "path": "battle_log_entry.display.int_16",
+      "encoding": "VInt",
+      "offset": 79,
+      "end_offset": 80,
+      "length": 1,
+      "hex": "00",
+      "value": 0
+    },
+    {
+      "path": "battle_log_entry.display.int_20",
+      "encoding": "VInt",
+      "offset": 80,
+      "end_offset": 84,
+      "length": 4,
+      "hex": "80fcd91a",
+      "value": 28000000
+    },
+    {
+      "path": "battle_log_entry.display.int_24",
+      "encoding": "VInt",
+      "offset": 84,
+      "end_offset": 88,
+      "length": 4,
+      "hex": "85838129",
+      "value": 43000005
+    },
+    {
+      "path": "battle_log_entry.display.int_28",
+      "encoding": "VInt",
+      "offset": 88,
+      "end_offset": 89,
+      "length": 1,
+      "hex": "7f",
+      "value": -1
+    },
+    {
+      "path": "battle_log_entry.display.int_32",
+      "encoding": "VInt",
+      "offset": 89,
+      "end_offset": 90,
+      "length": 1,
+      "hex": "00",
+      "value": 0
+    },
+    {
+      "path": "battle_log_entry.display.string_48",
+      "encoding": "String",
+      "offset": 90,
+      "end_offset": 94,
+      "length": 4,
+      "hex": "00000000",
+      "value": ""
+    },
+    {
+      "path": "battle_log_entry.display.int_36",
+      "encoding": "VInt",
+      "offset": 94,
+      "end_offset": 95,
+      "length": 1,
+      "hex": "00",
+      "value": 0
+    },
+    {
+      "path": "battle_log_entry.display.int_40",
+      "encoding": "VInt",
+      "offset": 95,
+      "end_offset": 96,
+      "length": 1,
+      "hex": "00",
+      "value": 0
+    },
+    {
+      "path": "battle_log_entry.display.bool_64",
+      "encoding": "Bool",
+      "offset": 96,
+      "end_offset": 97,
+      "length": 1,
+      "hex": "01",
+      "value": true,
+      "bit": 0
+    },
+    {
+      "path": "battle_log_entry.display.int_68",
+      "encoding": "VInt",
+      "offset": 97,
+      "end_offset": 98,
+      "length": 1,
+      "hex": "00",
+      "value": 0
+    },
+    {
+      "path": "battle_log_entry.display.int_72",
+      "encoding": "VInt",
+      "offset": 98,
+      "end_offset": 99,
+      "length": 1,
+      "hex": "00",
+      "value": 0
+    },
+    {
+      "path": "battle_log_entry.has_long_104",
+      "encoding": "Bool",
+      "offset": 99,
+      "end_offset": 100,
+      "length": 1,
+      "hex": "01",
+      "value": true,
+      "bit": 0
+    },
+    {
+      "path": "battle_log_entry.long_104.high",
+      "encoding": "UInt32BE",
+      "offset": 100,
+      "end_offset": 104,
+      "length": 4,
+      "hex": "00000067",
+      "value": 103
+    },
+    {
+      "path": "battle_log_entry.long_104.low",
+      "encoding": "UInt32BE",
+      "offset": 104,
+      "end_offset": 108,
+      "length": 4,
+      "hex": "00028fd4",
+      "value": 167892
+    },
+    {
+      "path": "battle_log_entry.data_112.table",
+      "encoding": "VInt",
+      "offset": 108,
+      "end_offset": 109,
+      "length": 1,
+      "hex": "1c",
+      "value": 28
+    },
+    {
+      "path": "battle_log_entry.data_112.instance",
+      "encoding": "VInt",
+      "offset": 109,
+      "end_offset": 111,
+      "length": 2,
+      "hex": "930d",
+      "value": 851
+    },
+    {
+      "path": "battle_log_entry.data_120.table",
+      "encoding": "VInt",
+      "offset": 111,
+      "end_offset": 112,
+      "length": 1,
+      "hex": "1c",
+      "value": 28
+    },
+    {
+      "path": "battle_log_entry.data_120.instance",
+      "encoding": "VInt",
+      "offset": 112,
+      "end_offset": 114,
+      "length": 2,
+      "hex": "9e0f",
+      "value": 990
+    },
+    {
+      "path": "battle_log_entry.data_128.table",
+      "encoding": "VInt",
+      "offset": 114,
+      "end_offset": 115,
+      "length": 1,
+      "hex": "34",
+      "value": 52
+    },
+    {
+      "path": "battle_log_entry.data_128.instance",
+      "encoding": "VInt",
+      "offset": 115,
+      "end_offset": 117,
+      "length": 2,
+      "hex": "8601",
+      "value": 70
+    },
+    {
+      "path": "battle_log_entry.list_136.count",
+      "encoding": "VInt",
+      "offset": 117,
+      "end_offset": 118,
+      "length": 1,
+      "hex": "02",
+      "value": 2
+    },
+    {
+      "path": "battle_log_entry.list_136[0]",
+      "encoding": "VInt",
+      "offset": 118,
+      "end_offset": 119,
+      "length": 1,
+      "hex": "07",
+      "value": 7
+    },
+    {
+      "path": "battle_log_entry.list_136[1]",
+      "encoding": "VInt",
+      "offset": 119,
+      "end_offset": 120,
+      "length": 1,
+      "hex": "00",
+      "value": 0
+    }
+  ],
+  "spans": [
+    {
+      "path": "context12",
+      "start_cursor": 1,
+      "start_bit_cursor": 1,
+      "end_cursor": 15,
+      "end_bit_cursor": 0
+    },
+    {
+      "path": "player_id",
+      "start_cursor": 17,
+      "start_bit_cursor": 0,
+      "end_cursor": 25,
+      "end_bit_cursor": 0
+    },
+    {
+      "path": "battle_log_entry.player_id",
+      "start_cursor": 27,
+      "start_bit_cursor": 0,
+      "end_cursor": 35,
+      "end_bit_cursor": 0
+    },
+    {
+      "path": "battle_log_entry.members[0].data",
+      "start_cursor": 38,
+      "start_bit_cursor": 0,
+      "end_cursor": 40,
+      "end_bit_cursor": 0
+    },
+    {
+      "path": "battle_log_entry.members[0]",
+      "start_cursor": 38,
+      "start_bit_cursor": 0,
+      "end_cursor": 44,
+      "end_bit_cursor": 0
+    },
+    {
+      "path": "battle_log_entry.members",
+      "start_cursor": 37,
+      "start_bit_cursor": 1,
+      "end_cursor": 44,
+      "end_bit_cursor": 0
+    },
+    {
+      "path": "battle_log_entry.display",
+      "start_cursor": 45,
+      "start_bit_cursor": 0,
+      "end_cursor": 99,
+      "end_bit_cursor": 0
+    },
+    {
+      "path": "battle_log_entry.long_104",
+      "start_cursor": 100,
+      "start_bit_cursor": 1,
+      "end_cursor": 108,
+      "end_bit_cursor": 0
+    },
+    {
+      "path": "battle_log_entry.data_112",
+      "start_cursor": 108,
+      "start_bit_cursor": 0,
+      "end_cursor": 111,
+      "end_bit_cursor": 0
+    },
+    {
+      "path": "battle_log_entry.data_120",
+      "start_cursor": 111,
+      "start_bit_cursor": 0,
+      "end_cursor": 114,
+      "end_bit_cursor": 0
+    },
+    {
+      "path": "battle_log_entry.data_128",
+      "start_cursor": 114,
+      "start_bit_cursor": 0,
+      "end_cursor": 117,
+      "end_bit_cursor": 0
+    },
+    {
+      "path": "battle_log_entry.list_136[0]",
+      "start_cursor": 118,
+      "start_bit_cursor": 0,
+      "end_cursor": 119,
+      "end_bit_cursor": 0
+    },
+    {
+      "path": "battle_log_entry.list_136[1]",
+      "start_cursor": 119,
+      "start_bit_cursor": 0,
+      "end_cursor": 120,
+      "end_bit_cursor": 0
+    },
+    {
+      "path": "battle_log_entry.list_136",
+      "start_cursor": 117,
+      "start_bit_cursor": 0,
+      "end_cursor": 120,
+      "end_bit_cursor": 0
+    },
+    {
+      "path": "battle_log_entry",
+      "start_cursor": 26,
+      "start_bit_cursor": 1,
+      "end_cursor": 120,
+      "end_bit_cursor": 0
+    }
+  ]
+}

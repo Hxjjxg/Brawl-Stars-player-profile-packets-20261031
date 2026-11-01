@@ -1,0 +1,21 @@
+{
+  "tag": "#LUY2YJP",
+  "high": 108,
+  "low": 202449,
+  "events": [
+    {
+      "type": "send",
+      "payload": {
+        "event": "retargeted-one-request",
+        "original": {
+          "high": 103,
+          "low": 11232845
+        },
+        "target": {
+          "high": 108,
+          "low": 202449
+        }
+      }
+    }
+  ]
+}

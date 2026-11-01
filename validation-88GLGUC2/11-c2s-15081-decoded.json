@@ -1,0 +1,77 @@
+{
+  "id": 15081,
+  "context12": [
+    3,
+    0,
+    3,
+    3,
+    2,
+    3,
+    3,
+    2,
+    1,
+    485,
+    4943,
+    -1
+  ],
+  "source": 539,
+  "query_parameter": 539,
+  "player_id": {
+    "high": 102,
+    "low": 2774449
+  },
+  "tag": "#LJPGGJR0",
+  "has_battle_log_entry": true,
+  "battle_log_entry": {
+    "int_0": 2,
+    "player_id": {
+      "high": 102,
+      "low": 2774449
+    },
+    "int_16": 1,
+    "bool_20": false,
+    "members": [
+      {
+        "data": {
+          "table": 16,
+          "instance": 15
+        },
+        "int_40": 539,
+        "int_56": -2,
+        "int_72": 11
+      }
+    ],
+    "int_88": 0,
+    "display": {
+      "name": "giao桑",
+      "int_16": 0,
+      "int_20": 28000000,
+      "int_24": 43000010,
+      "int_28": -1,
+      "int_32": 0,
+      "string_48": "",
+      "int_36": 0,
+      "int_40": 0,
+      "bool_64": true,
+      "int_68": 0,
+      "int_72": 0
+    },
+    "optional_long_104": null,
+    "data_112": {
+      "table": 28,
+      "instance": 229
+    },
+    "data_120": {
+      "table": 28,
+      "instance": 18
+    },
+    "data_128": {
+      "table": 52,
+      "instance": 704
+    },
+    "list_136": [
+      7,
+      0
+    ]
+  }
+}

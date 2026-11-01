@@ -1,0 +1,5 @@
+{"type": "send", "payload": {"time": "2026-11-01T05:03:39.675Z", "caller": "0x1485be8", "high": 105, "low": 11481740, "viewKind": 6, "hasBattleEntry": false, "queryParameter": 0, "hasContext12": false, "battleEntryType": null}}
+{"type": "send", "payload": {"time": "2026-11-01T05:04:03.222Z", "caller": "0x1485be8", "high": 104, "low": 13154436, "viewKind": 6, "hasBattleEntry": false, "queryParameter": 0, "hasContext12": false, "battleEntryType": null}}
+{"type": "send", "payload": {"time": "2026-11-01T05:04:26.925Z", "caller": "0x1485be8", "high": 111, "low": 5748119, "viewKind": 7, "hasBattleEntry": true, "queryParameter": 4954, "hasContext12": true, "battleEntryType": 2}}
+{"type": "send", "payload": {"time": "2026-11-01T05:04:58.281Z", "caller": "0x1485be8", "high": 111, "low": 5665270, "viewKind": 7, "hasBattleEntry": true, "queryParameter": 4954, "hasContext12": true, "battleEntryType": 2}}
+{"type": "send", "payload": {"time": "2026-11-01T05:05:37.496Z", "caller": "0x1485be8", "high": 111, "low": 5655703, "viewKind": 7, "hasBattleEntry": true, "queryParameter": 4954, "hasContext12": true, "battleEntryType": 2}}

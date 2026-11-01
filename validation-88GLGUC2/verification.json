@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "frames": 14,
+  "coverage": {
+    "requests": 7,
+    "responses": 7,
+    "context12_true": 2,
+    "battle_log_true": 2,
+    "errors": []
+  },
+  "target": {
+    "sequence": 2,
+    "id": 24113,
+    "length": 4998,
+    "time": "2026-10-31T14:31:57.011Z",
+    "body_sha256": "25f28a199462d39943ece1ff2bf175df7f4fa6448cb25dc8fa78239d8c780f7a",
+    "decoded": true,
+    "fields": 4265,
+    "fully_covered": true,
+    "tag": "#88GLGUC2",
+    "name": "TIG丨初夏",
+    "heroes": 108,
+    "trophies": 234527,
+    "highest_trophies_candidate": 234527,
+    "alliance_present": true,
+    "collection_present": true,
+    "optional_int_present": true
+  },
+  "checks": [
+    "all real frame bodies fully decoded",
+    "all bytes traced",
+    "requests re-encode byte-for-byte",
+    "original BIN and JSONL agree",
+    "88GLGUC2 ID/name/108 heroes/234527 trophies match observed UI",
+    "current vs highest trophies distinguished by unequal sample and native UI consumer",
+    "both request optional branches triggered twice by unmodified game actions",
+    "88-byte and 100-byte extended requests re-encode exactly",
+    "viewKind 7 display tags use native high+100 rendering",
+    "response alliance/collection/optional-int presence and absence both covered"
+  ],
+  "session_closed": true,
+  "stop": {
+    "frames": 14,
+    "sentFrames": 14,
+    "receiverFlushedFrames": 14,
+    "errors": 0,
+    "skipped": 0,
+    "phase": "stopped"
+  }
+}

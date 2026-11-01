@@ -1,0 +1,14 @@
+{
+  "kind": "frame",
+  "sequence": 5,
+  "time": "2026-10-31T14:37:49.733Z",
+  "direction": "c2s",
+  "id": 15081,
+  "version": 0,
+  "stage": "after-encode",
+  "length": 12,
+  "bodyHex": "009a4d00000066007fb0c300",
+  "binaryFile": "lasercn-plain-1793457086927-24924-c2s-15081.bin",
+  "binaryOffset": 36,
+  "binaryLength": 19
+}

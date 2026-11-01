@@ -1,0 +1,239 @@
+{
+  "addr": "0x1485a44",
+  "code": "_QWORD *__fastcall sub_1485A44(__int64 a1, _QWORD *a2)\n{\n  __int64 v4; // x0\n  __int64 v5; // x21\n  __int64 v6; // x0\n  __int64 v7; // x8\n  _QWORD *result; // x0\n  __int64 v9; // x0\n  __int64 v10; // x0\n  __int64 v11; // x0\n  __int64 v12; // x20\n  __int64 v13; // x0\n  __int64 v14; // x21\n  __int64 v15; // x0\n  _DWORD *v16; // x8\n  int n7; // w2\n  __int64 v18; // x3\n  unsigned int v19; // w4\n  __int64 v20; // x19\n  __int64 v21; // x0\n  __int64 v22; // x8\n  __int64 v23; // x0\n  __int64 v24; // x8\n  __int64 v25; // x20\n  __int64 v26; // x20\n  __int64 v27; // x0\n  __int64 v28; // x20\n  __int64 v29; // x21\n  __int64 v30; // x0\n  __int64 v31; // x0\n  __int64 v32; // x0\n  _QWORD *v33; // x0\n  __int64 n4; // x8\n  __int64 v35; // x8\n  __int64 v36; // x0\n  __int64 v37; // x20\n  __int64 v38; // x8\n  __int64 ****v39; // x8\n  __int64 *v40; // x1\n  _BYTE v41[16]; // [xsp+10h] [xbp-70h] BYREF\n  _QWORD v42[2]; // [xsp+20h] [xbp-60h] BYREF\n  _QWORD v43[4]; // [xsp+30h] [xbp-50h] BYREF\n  _QWORD *v44; // [xsp+50h] [xbp-30h]\n  _QWORD v45[2]; // [xsp+60h] [xbp-20h] BYREF\n  _QWORD v46[2]; // [xsp+70h] [xbp-10h] BYREF\n\n  if ( *(_QWORD **)(a1 + 600) != a2 ) /*0x1485a68*/\n  {\n    if ( *(_QWORD *)(a1 + 584) ) /*0x1485a6c*/\n    {\n      v4 = *(_QWORD *)(a1 + 592); /*0x1485a74*/\n      if ( v4 ) /*0x1485a78*/\n      {\n        (*(void (__fastcall **)(__int64, _QWORD))(*(_QWORD *)v4 + 56LL))(v4, 0); /*0x1485a88*/\n        sub_9DC1A8(v43, *(_QWORD *)(a1 + 592) + 72LL); /*0x1485a98*/\n        if ( !HIDWORD(v43[0]) ) /*0x1485aa0*/\n        {\n          v5 = *(_QWORD *)(a1 + 584); /*0x1485aa4*/\n          v6 = ((__int64 (__fastcall *)(const char *))loc_164DD98)(\"TID_INPUT_BATTLE_UUID\"); /*0x1485ab0*/\n          ((void (__fastcall *)(__int64, __int64))dword_8ED9FC)(v5, v6); /*0x1485abc*/\n        }\n        *(_BYTE *)(*(_QWORD *)(a1 + 584) + 156LL) = 0; /*0x1485ac8*/\n        sub_9DC018(v43); /*0x1485acc*/\n      }\n    }\n  }\n  v7 = sub_C29A64(*(_QWORD *)(a1 + 488), 8000); /*0x1485adc*/\n  result = *(_QWORD **)(a1 + 488); /*0x1485ae0*/\n  if ( (_QWORD *)v7 == a2 ) /*0x1485ae8*/\n  {\n    if ( !result || !result[43] ) /*0x1485b88*/\n      return result; /*0x1485b8c*/\n    v12 = sub_C240E0(); /*0x1485b94*/\n    operator delete(&qword_2A0); /*0x1485b9c*/\n    v14 = v13; /*0x1485ba4*/\n    v15 = sub_89780C(*(_QWORD *)(*(_QWORD *)(a1 + 488) + 344LL)); /*0x1485bb0*/\n    v16 = *(_DWORD **)(a1 + 512); /*0x1485bb4*/\n    if ( *v16 == 2 ) /*0x1485bd8*/\n      n7 = 7; /*0x1485bd8*/\n    else\n      n7 = 6; /*0x1485bd8*/\n    if ( *v16 == 2 ) /*0x1485bdc*/\n      v18 = *(_QWORD *)(a1 + 512); /*0x1485bdc*/\n    else\n      v18 = 0; /*0x1485bdc*/\n    if ( *v16 == 2 ) /*0x1485be0*/\n      v19 = *(_DWORD *)(a1 + 520); /*0x1485be0*/\n    else\n      v19 = 0; /*0x1485be0*/\n    sub_C32850(v14, v15, n7, v18, v19, *(_QWORD *)(a1 + 544), 0); /*0x1485be4*/\n    sub_C88F60(v12, v14); /*0x1485bf0*/\n    return (_QWORD *)sub_C2998C(*(_QWORD *)(a1 + 488)); /*0x1485bf0*/\n  }\n  result = (_QWORD *)sub_C29A64(result, 8004); /*0x1485af0*/\n  if ( result != a2 ) /*0x1485af8*/\n  {\n    result = (_QWORD *)sub_C29A64(*(_QWORD *)(a1 + 488), 8026); /*0x1485b04*/\n    if ( result != a2 ) /*0x1485b0c*/\n    {\n      if ( *(_QWORD **)(a1 + 600) == a2 ) /*0x1485b18*/\n      {\n        result = *(_QWORD **)(a1 + 592); /*0x1485f34*/\n        if ( result ) /*0x1485f38*/\n          result = (_QWORD *)(*(__int64 (__fastcall **)(_QWORD *, __int64))(*result + 56LL))(result, 1); /*0x1485f48*/\n        v38 = *(_QWORD *)(a1 + 584); /*0x1485f4c*/\n        if ( v38 ) /*0x1485f50*/\n          *(_BYTE *)(v38 + 156) = 1; /*0x1485f58*/\n      }\n      else if ( *(_QWORD **)(a1 + 608) == a2 ) /*0x1485b24*/\n      {\n        return (_QWORD *)sub_1486038(a1); /*0x1485f74*/\n      }\n      else\n      {\n        v9 = *(_QWORD *)(a1 + 496); /*0x1485b28*/\n        if ( v9 && (v9 = sub_C29A64(v9, 8021), (_QWORD *)v9 == a2) ) /*0x1485b3c*/\n        {\n          v39 = *(__int64 *****)(*(_QWORD *)(*(_QWORD *)(a1 + 504) + 272LL) + 8LL); /*0x1485fa0*/\n          if ( v39 ) /*0x1485fa4*/\n            v39 = (__int64 ****)**v39; /*0x1485fac*/\n          v40 = (__int64 *)v39[18]; /*0x1485fb0*/\n          if ( v40 ) /*0x1485fb4*/\n            ((void (__fastcall *)(__int64, __int64 *, __int64 ****, __int64 ***, __int64 ***))loc_136E08C)( /*0x1485fcc*/\n              qword_1EC0538,\n              v40,\n              v39 + 20,\n              v39[7],\n              v39[6]);\n          return (_QWORD *)sub_C2998C(*(_QWORD *)(a1 + 496)); /*0x1485fd4*/\n        }\n        else if ( *(_QWORD **)(a1 + 272) == a2 ) /*0x1485b48*/\n        {\n          return (_QWORD *)(*(__int64 (__fastcall **)(__int64))(*(_QWORD *)a1 + 536LL))(a1); /*0x1485f94*/\n        }\n        else if ( *(_QWORD **)(a1 + 280) == a2 ) /*0x1485b54*/\n        {\n          return (_QWORD *)(*(__int64 (__fastcall **)(__int64))(*(_QWORD *)a1 + 544LL))(a1); /*0x1485ff8*/\n        }\n        else\n        {\n          v10 = sub_1617B28(v9); /*0x1485b58*/\n          v11 = sub_1619648(v10); /*0x1485b5c*/\n          sub_14313E4(v11); /*0x1485b60*/\n          return (_QWORD *)((__int64 (__fastcall *)(__int64, _QWORD *))loc_D6E87C)(a1, a2); /*0x1485b6c*/\n        }\n      }\n      return result; /*0x1485b6c*/\n    }\n    v22 = *(_QWORD *)(a1 + 488); /*0x1485c5c*/\n    if ( !v22 || !*(_QWORD *)(v22 + 344) ) /*0x1485c64*/\n      return result; /*0x1485c68*/\n    if ( (((__int64 (*)(void))loc_163F5C8)() & 1) != 0 ) /*0x1485c70*/\n    {\n      v23 = *(_QWORD *)(a1 + 552); /*0x1485c74*/\n      if ( v23 ) /*0x1485c78*/\n        __register_atfork(v23); /*0x1485c7c*/\n      v24 = *(_QWORD *)(a1 + 488); /*0x1485c80*/\n      *(_QWORD *)(a1 + 552) = 0; /*0x1485c84*/\n      *(_QWORD *)(a1 + 552) = sub_89780C(*(_QWORD *)(v24 + 344)); /*0x1485c90*/\n      v25 = ((__int64 (__fastcall *)(const char *))loc_164DD98)(\"TID_REPORT_BATTLE_PLAYER_CONFIRMATION_TITLE\"); /*0x1485ca8*/\n      sub_9DC128((int)v43, \"<NAME>\"); /*0x1485cb4*/\n      ((void (__fastcall *)(_QWORD *__return_ptr, __int64, _QWORD *, __int64))qword_9DDCE8[0])(v46, v25, v43, a1 + 528); /*0x1485cc8*/\n      sub_9DC018(v43); /*0x1485cd0*/\n      v26 = ((__int64 (__fastcall *)(const char *))loc_164DD98)(\"TID_REPORT_BATTLE_PLAYER_CONFIRMATION\"); /*0x1485ce0*/\n      sub_9DC128((int)v43, \"<NAME>\"); /*0x1485cec*/\n      ((void (__fastcall *)(_QWORD *__return_ptr, __int64, _QWORD *, __int64))qword_9DDCE8[0])(v45, v26, v43, a1 + 528); /*0x1485d00*/\n      sub_9DC018(v43); /*0x1485d08*/\n      operator delete(&qword_1E0); /*0x1485d10*/\n      v28 = v27; /*0x1485d14*/\n      sub_9DC128((int)v43, \"popup_generic\"); /*0x1485d24*/\n      ((void (__fastcall *)(__int64, _QWORD *, _QWORD, _QWORD))dword_D6D90C)(v28, v43, 0, 0); /*0x1485d50*/\n      sub_9DC018(v43); /*0x1485d58*/\n      sub_9DC128((int)v43, \"title_txt\"); /*0x1485d68*/\n      ((void (__fastcall *)(__int64, _QWORD *, _QWORD *))unk_D6E160)(v28, v43, v46); /*0x1485d78*/\n      sub_9DC018(v43); /*0x1485d80*/\n      sub_9DC128((int)v43, &s1__3); /*0x1485d94*/\n      ((void (__fastcall *)(__int64, _QWORD *, _QWORD *))unk_D6E160)(v28, v43, v45); /*0x1485da4*/\n      sub_9DC018(v43); /*0x1485dac*/\n      v43[0] = &off_1D4AD48; /*0x1485dc4*/\n      v43[1] = a1; /*0x1485dc4*/\n      v44 = v43; /*0x1485dc8*/\n      sub_9DC128((int)v42, \"button_yes\"); /*0x1485dcc*/\n      v29 = ((__int64 (__fastcall *)(__int64, _QWORD *, _QWORD *, _QWORD, __int64))loc_D6E280)(v28, v42, v43, 0, 1); /*0x1485de8*/\n      sub_9DC018(v42); /*0x1485df0*/\n      v30 = ((__int64 (__fastcall *)(void *))loc_164DD98)(&unk_33B9E2); /*0x1485dfc*/\n      (*(void (__fastcall **)(__int64, __int64, __int64))(*(_QWORD *)v29 + 440LL))(v29, v30, 1); /*0x1485e14*/\n      ((void (__fastcall *)(__int64, const char *, _QWORD))unk_C0DD80)(v28, \"button_close\", 0); /*0x1485e28*/\n      sub_9DC128((int)v42, &s1__4); /*0x1485e38*/\n      sub_9DC128((int)v41, &s1__5); /*0x1485e48*/\n      ((void (__fastcall *)(__int64, _QWORD *, _BYTE *))dword_D6E77C)(v28, v42, v41); /*0x1485e58*/\n      sub_9DC018(v41); /*0x1485e60*/\n      sub_9DC018(v42); /*0x1485e68*/\n      sub_9354A0(*(_QWORD *)(v28 + 152), \"button_negative\", 0); /*0x1485e7c*/\n      v31 = sub_9354A0(*(_QWORD *)(v28 + 152), \"button_ok\", 0); /*0x1485e90*/\n      v32 = ((__int64 (__fastcall *)(__int64))byte_BFEC80)(v31); /*0x1485e94*/\n      v42[0] = v28; /*0x1485ea8*/\n      ((void (__fastcall *)(__int64, _QWORD *, __int64, _QWORD, __int64))byte_C005D0)(v32, v42, 1, 0, 1); /*0x1485eac*/\n      v33 = v44; /*0x1485eb0*/\n      if ( v44 == v43 ) /*0x1485eb8*/\n      {\n        n4 = 4; /*0x1486010*/\n        v33 = v43; /*0x1486014*/\n      }\n      else\n      {\n        if ( !v44 ) /*0x1485ebc*/\n        {\nLABEL_57:\n          sub_9DC018(v45); /*0x1486024*/\n          sub_9DC018(v46); /*0x1486030*/\n          return (_QWORD *)sub_C2998C(*(_QWORD *)(a1 + 488)); /*0x1486034*/\n        }\n        n4 = 5; /*0x1485ec0*/\n      }\n      (*(void (**)(void))(*v33 + 8 * n4))(); /*0x1486020*/\n      goto LABEL_57; /*0x1486020*/\n    }\n    return (_QWORD *)sub_C2998C(*(_QWORD *)(a1 + 488)); /*0x1485c0c*/\n  }\n  if ( **(_DWORD **)(a1 + 512) == 2 ) /*0x1485c1c*/\n  {\n    v20 = ((__int64 (*)(void))byte_BFEC80)(); /*0x1485c24*/\n    v21 = ((__int64 (__fastcall *)(const char *))loc_164DD98)(\"TID_ADD_FRIEND_ERROR_TOO_MANY_REQUESTS_OTHER\"); /*0x1485c30*/\n    return (_QWORD *)((__int64 (__fastcall *)(__int64, __int64, __int64, double))dword_BFF704)( /*0x1485c44*/\n                       v20,\n                       v21,\n                       0xFFFFFFFFLL,\n                       0.0);\n  }\n  else\n  {\n    v35 = *(_QWORD *)(a1 + 488); /*0x1485ec8*/\n    if ( v35 && *(_QWORD *)(v35 + 344) ) /*0x1485ed0*/\n    {\n      operator delete(&qword_A8); /*0x1485edc*/\n      v37 = v36; /*0x1485ee0*/\n      sub_18C3300(); /*0x1485ee4*/\n      sub_18C3420(v37, 4); /*0x1485ef0*/\n      sub_18C502C(v37, *(_QWORD *)(*(_QWORD *)(a1 + 488) + 344LL)); /*0x1485f00*/\n      return (_QWORD *)(*(__int64 (__fastcall **)(__int64, __int64))(*(_QWORD *)qword_1EC0598 + 24LL))( /*0x1485f1c*/\n                         qword_1EC0598,\n                         v37);\n    }\n  }\n  return result; /*0x1485b80*/\n}",
+  "line_count": 246,
+  "total_lines": 246,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x9dc1a8",
+      "name": "sub_9DC1A8"
+    },
+    {
+      "addr": "0x164dd98",
+      "name": "loc_164DD98"
+    },
+    {
+      "addr": "0x338af9",
+      "name": "aTidInputBattle",
+      "string": "TID_INPUT_BATTLE_UUID"
+    },
+    {
+      "addr": "0x8ed9fc",
+      "name": "dword_8ED9FC"
+    },
+    {
+      "addr": "0x9dc018",
+      "name": "sub_9DC018"
+    },
+    {
+      "addr": "0xc29a64",
+      "name": "sub_C29A64"
+    },
+    {
+      "addr": "0xc240e0",
+      "name": "sub_C240E0"
+    },
+    {
+      "addr": "0x1c7c7a0",
+      "name": "._ZdlPv"
+    },
+    {
+      "addr": "0x2a0",
+      "name": "qword_2A0"
+    },
+    {
+      "addr": "0x89780c",
+      "name": "sub_89780C"
+    },
+    {
+      "addr": "0xc32850",
+      "name": "sub_C32850"
+    },
+    {
+      "addr": "0xc88f60",
+      "name": "sub_C88F60"
+    },
+    {
+      "addr": "0xc2998c",
+      "name": "sub_C2998C"
+    },
+    {
+      "addr": "0x1486038",
+      "name": "sub_1486038"
+    },
+    {
+      "addr": "0x136e08c",
+      "name": "loc_136E08C"
+    },
+    {
+      "addr": "0x1ec0538",
+      "name": "qword_1EC0538"
+    },
+    {
+      "addr": "0x1617b28",
+      "name": "sub_1617B28"
+    },
+    {
+      "addr": "0x1619648",
+      "name": "sub_1619648"
+    },
+    {
+      "addr": "0x14313e4",
+      "name": "sub_14313E4"
+    },
+    {
+      "addr": "0xd6e87c",
+      "name": "loc_D6E87C"
+    },
+    {
+      "addr": "0x1c7c790",
+      "name": ".__register_atfork"
+    },
+    {
+      "addr": "0x325c04",
+      "name": "aTidReportBattl_0",
+      "string": "TID_REPORT_BATTLE_PLAYER_CONFIRMATION_TITLE"
+    },
+    {
+      "addr": "0x9dc128",
+      "name": "sub_9DC128"
+    },
+    {
+      "addr": "0x31eb1f",
+      "name": "aName",
+      "string": "<NAME>"
+    },
+    {
+      "addr": "0x9ddce8",
+      "name": "qword_9DDCE8"
+    },
+    {
+      "addr": "0x3091a2",
+      "name": "aTidReportBattl",
+      "string": "TID_REPORT_BATTLE_PLAYER_CONFIRMATION"
+    },
+    {
+      "addr": "0x1e0",
+      "name": "qword_1E0"
+    },
+    {
+      "addr": "0x37625a",
+      "name": "aPopupGeneric",
+      "string": "popup_generic"
+    },
+    {
+      "addr": "0xd6d90c",
+      "name": "dword_D6D90C"
+    },
+    {
+      "addr": "0x3585b3",
+      "name": "aTitleTxt",
+      "string": "title_txt"
+    },
+    {
+      "addr": "0xd6e160",
+      "name": "unk_D6E160"
+    },
+    {
+      "addr": "0x35c7d5",
+      "name": "s1__3"
+    },
+    {
+      "addr": "0x1d4ad48",
+      "name": "off_1D4AD48"
+    },
+    {
+      "addr": "0x336d49",
+      "name": "aButtonYes",
+      "string": "button_yes"
+    },
+    {
+      "addr": "0xd6e280",
+      "name": "loc_D6E280"
+    },
+    {
+      "addr": "0x33b9e2",
+      "name": "unk_33B9E2"
+    },
+    {
+      "addr": "0xc0dd80",
+      "name": "unk_C0DD80"
+    },
+    {
+      "addr": "0x336d54",
+      "name": "aButtonClose",
+      "string": "button_close"
+    },
+    {
+      "addr": "0x37b260",
+      "name": "s1__4"
+    },
+    {
+      "addr": "0x31a165",
+      "name": "s1__5"
+    },
+    {
+      "addr": "0xd6e77c",
+      "name": "dword_D6E77C"
+    },
+    {
+      "addr": "0x9354a0",
+      "name": "sub_9354A0"
+    },
+    {
+      "addr": "0x3539e0",
+      "name": "aButtonNegative",
+      "string": "button_negative"
+    },
+    {
+      "addr": "0x3623e1",
+      "name": "aButtonOk",
+      "string": "button_ok"
+    },
+    {
+      "addr": "0xbfec80",
+      "name": "byte_BFEC80"
+    },
+    {
+      "addr": "0xc005d0",
+      "name": "byte_C005D0"
+    },
+    {
+      "addr": "0x163f5c8",
+      "name": "loc_163F5C8"
+    },
+    {
+      "addr": "0x32ee7c",
+      "name": "aTidAddFriendEr_2",
+      "string": "TID_ADD_FRIEND_ERROR_TOO_MANY_REQUESTS_OTHER"
+    },
+    {
+      "addr": "0xbff704",
+      "name": "dword_BFF704"
+    },
+    {
+      "addr": "0xa8",
+      "name": "qword_A8"
+    },
+    {
+      "addr": "0x18c3300",
+      "name": "sub_18C3300"
+    },
+    {
+      "addr": "0x18c3420",
+      "name": "sub_18C3420"
+    },
+    {
+      "addr": "0x18c502c",
+      "name": "sub_18C502C"
+    },
+    {
+      "addr": "0x1ec0598",
+      "name": "qword_1EC0598"
+    }
+  ]
+}

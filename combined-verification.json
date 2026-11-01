@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "game_version": "69.114.1",
+  "total_frames": 33,
+  "sessions": [
+    {
+      "name": "original",
+      "verification": "verification.json",
+      "passed": true,
+      "frames": 9
+    },
+    {
+      "name": "validation-88GLGUC2",
+      "verification": "validation-88GLGUC2/verification.json",
+      "passed": true,
+      "frames": 14
+    },
+    {
+      "name": "validation-real-20261101",
+      "verification": "validation-real-20261101/verification.json",
+      "passed": true,
+      "frames": 10
+    }
+  ],
+  "new_session_requests": 5,
+  "new_session_responses": 5,
+  "captured_optional_long_104_nonnull": 2,
+  "remaining_unknowns": [
+    "optional_long_104 business meaning",
+    "other fields intentionally named by native offsets",
+    "response trailing VInt business meaning"
+  ],
+  "capture_closed": true
+}

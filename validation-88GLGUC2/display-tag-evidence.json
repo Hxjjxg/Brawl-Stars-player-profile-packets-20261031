@@ -1,0 +1,97 @@
+{
+  "addr": "0xc36f1c",
+  "code": "__int64 __fastcall sub_C36F1C(__int64 a1)\n{\n  unsigned __int8 v2; // w8\n  __int64 *v3; // x1\n  __int64 result; // x0\n  __int64 v5; // x20\n  __int64 v6; // x0\n  __int64 v7; // x21\n  __int64 v8; // x0\n  __int64 v9; // x22\n  int v10; // w0\n  __int64 v11; // x8\n  int v12; // w19\n  unsigned int v13; // w0\n  __int64 v14; // x19\n\n  v2 = atomic_load((unsigned __int8 *)&byte_1E6CFF0); /*0xc36f38*/\n  if ( (v2 & 1) == 0 && (unsigned int)std::__fs::filesystem::path::__stem((std::__fs::filesystem::path *)&byte_1E6CFF0) ) /*0xc37074*/\n  {\n    sub_9DC128((int)&unk_1E6D008, \"tag_txt\"); /*0xc37088*/\n    __cxa_finalize(sub_9DC018); /*0xc370a0*/\n    __cxa_guard_acquire((__guard *)&byte_1E6CFF0); /*0xc370a8*/\n  }\n  if ( n8 >= 8 ) /*0xc36f6c*/\n    v3 = (__int64 *)qword_1E6D010; /*0xc36f6c*/\n  else\n    v3 = &qword_1E6D010; /*0xc36f6c*/\n  result = ((__int64 (__fastcall *)(_QWORD, __int64 *, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD))loc_167E3D0)( /*0xc36f74*/\n             *(_QWORD *)(a1 + 152),\n             v3,\n             0,\n             0,\n             0,\n             0,\n             0);\n  if ( result ) /*0xc36f78*/\n  {\n    v5 = result; /*0xc36f7c*/\n    operator delete(&byte_8); /*0xc36f84*/\n    v7 = v6; /*0xc36f88*/\n    sub_19680B0(); /*0xc36f8c*/\n    if ( *(_DWORD *)(a1 + 536) == 7 ) /*0xc36f98*/\n    {\n      operator delete(&byte_8); /*0xc36fa0*/\n      v9 = v8; /*0xc36fa8*/\n      v10 = sub_897838(*(_QWORD *)(*(_QWORD *)(a1 + 584) + 144LL)); /*0xc36fb4*/\n      v11 = *(_QWORD *)(a1 + 584); /*0xc36fb8*/\n      v12 = v10; /*0xc36fbc*/\n      v13 = sub_897840(*(_QWORD *)(v11 + 144)); /*0xc36fc8*/\n      sub_897764(v9, (unsigned int)(v12 + 100), v13); /*0xc36fd8*/\n      v14 = sub_1968134(v7, v9); /*0xc36fe8*/\n      __register_atfork(v9); /*0xc36ff0*/\n      sub_19680F4(v7); /*0xc36ff8*/\n      result = __register_atfork(v7); /*0xc37000*/\n      if ( !v14 ) /*0xc37004*/\n        return result; /*0xc37004*/\n      goto LABEL_8; /*0xc37004*/\n    }\n    v14 = sub_1968134(v7, *(_QWORD *)(*(_QWORD *)(a1 + 584) + 144LL)); /*0xc37040*/\n    sub_19680F4(v7); /*0xc37048*/\n    result = __register_atfork(v7); /*0xc37050*/\n    if ( v14 ) /*0xc37054*/\n    {\nLABEL_8:\n      ((void (__fastcall *)(__int64, __int64))dword_8ED9FC)(v5, v14); /*0xc37008*/\n      sub_9DC018(v14); /*0xc37018*/\n      return __register_atfork(v14); /*0xc3702c*/\n    }\n  }\n  return result; /*0xc37064*/\n}",
+  "line_count": 71,
+  "total_lines": 71,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x1e6cff0",
+      "name": "byte_1E6CFF0"
+    },
+    {
+      "addr": "0x9dc128",
+      "name": "sub_9DC128"
+    },
+    {
+      "addr": "0x1e6d008",
+      "name": "unk_1E6D008"
+    },
+    {
+      "addr": "0x349d40",
+      "name": "aTagTxt",
+      "string": "tag_txt"
+    },
+    {
+      "addr": "0x1c7c770",
+      "name": ".__cxa_finalize"
+    },
+    {
+      "addr": "0x9dc018",
+      "name": "sub_9DC018"
+    },
+    {
+      "addr": "0x1c7c880",
+      "name": ".__cxa_guard_acquire"
+    },
+    {
+      "addr": "0x1c7c870",
+      "name": "._ZNKSt6__ndk14__fs10filesystem4path6__stemEv"
+    },
+    {
+      "addr": "0x1e6d010",
+      "name": "qword_1E6D010"
+    },
+    {
+      "addr": "0x1e6d00c",
+      "name": "n8"
+    },
+    {
+      "addr": "0x167e3d0",
+      "name": "loc_167E3D0"
+    },
+    {
+      "addr": "0x1c7c7a0",
+      "name": "._ZdlPv"
+    },
+    {
+      "addr": "0x8",
+      "name": "byte_8"
+    },
+    {
+      "addr": "0x19680b0",
+      "name": "sub_19680B0"
+    },
+    {
+      "addr": "0x897838",
+      "name": "sub_897838"
+    },
+    {
+      "addr": "0x897840",
+      "name": "sub_897840"
+    },
+    {
+      "addr": "0x897764",
+      "name": "sub_897764"
+    },
+    {
+      "addr": "0x1968134",
+      "name": "sub_1968134"
+    },
+    {
+      "addr": "0x1c7c790",
+      "name": ".__register_atfork"
+    },
+    {
+      "addr": "0x19680f4",
+      "name": "sub_19680F4"
+    },
+    {
+      "addr": "0x8ed9fc",
+      "name": "dword_8ED9FC"
+    }
+  ]
+}

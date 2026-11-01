@@ -1,0 +1,31 @@
+{
+  "original": {
+    "path": "F:\\cn-bs-lib_v69\\arm64-v8a\\libg.so",
+    "sha256": "7b643e1c97a9a4a2778b46d0a2e0c3dfd3598f84e36f68f94abfa3dc6bce3aff"
+  },
+  "runtime_copy": {
+    "path": "F:\\cn-bs-lib_v69\\migration-v69\\artifacts\\device\\libg-runtime-code.so",
+    "sha256": "39ef091a5f1190c2e942b17bc4b1dcbdcc9217a41e51f1cc74f4825b8cd1b112",
+    "source_metadata": "F:/cn-bs-lib_v69/migration-v69/evidence/runtime-code-capture.json"
+  },
+  "ranges": [
+    {
+      "start": "0x18bdd9c",
+      "end_exclusive": "0x18be0b0",
+      "original_equal_runtime": false,
+      "original_sha256": "7b779ec622499d1cc7fba781c775f1d93dc1d7e0fb648550eada0c00cd86cd14"
+    },
+    {
+      "start": "0x18be0b0",
+      "end_exclusive": "0x18be280",
+      "original_equal_runtime": false,
+      "original_sha256": "15b99f24ab6e51cc1f384b8630f8f5e585211d393d286c20f83ac1aa29a9d371"
+    },
+    {
+      "start": "0x18be810",
+      "end_exclusive": "0x18be920",
+      "original_equal_runtime": false,
+      "original_sha256": "554aecc5d9267d3833dee519b33d915cea940622b558175e68acdcb6655745a0"
+    }
+  ]
+}

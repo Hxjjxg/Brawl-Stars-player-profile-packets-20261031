@@ -1,0 +1,20 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+
+# Per-machine capture credentials and transient receiver state
+receiver-config.json
+receiver-state.json
+receiver.pid
+receiver.stdout.log
+receiver.stderr.log
+STOP
+PlayerProfileCapture.js
+LaserCn69_SocketCapture.js
+
+# Editor and OS state
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
