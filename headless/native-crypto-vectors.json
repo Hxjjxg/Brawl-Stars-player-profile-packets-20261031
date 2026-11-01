@@ -1,0 +1,32 @@
+{
+  "source": "live native 0xAD5298, fixed non-secret inputs",
+  "key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+  "nonce_hex": "000102030405060708090a0b0c0d0e0f1011121314151617",
+  "rounds": 19,
+  "vectors": [
+    {
+      "length": 0,
+      "cipher": "ede60c9fd0e847f901b70b83869455ef"
+    },
+    {
+      "length": 1,
+      "cipher": "a898cb8aecfb1437ee62d024e3a50379ce"
+    },
+    {
+      "length": 11,
+      "cipher": "07d454a5dc34ae2e40d29841a7c93860cea95f7482998f72425080"
+    },
+    {
+      "length": 32,
+      "cipher": "499ea063f81a6b890ae0c3ffecbd54cacea95f7482998f724250802cdf21b5b835908414c34bd28df1a0c24bd906e166"
+    },
+    {
+      "length": 65,
+      "cipher": "f985e9d31befc6cbed65661627b94d85cea95f7482998f724250802cdf21b5b835908414c34bd28df1a0c24bd906e166d0a7e11bf0b8416bc71be84ccf02682fa166becfa11e375ce9bbc1f2febdea546c"
+    },
+    {
+      "length": 128,
+      "cipher": "a30c8ec6cab4b51a2d89e74c8c63cb0ccea95f7482998f724250802cdf21b5b835908414c34bd28df1a0c24bd906e166d0a7e11bf0b8416bc71be84ccf02682fa166becfa11e375ce9bbc1f2febdea546cc569180a882a20f0c80dc44790716fa72f36a4e801d32e257b9c8f9ccf2111508af4a8243af62b50e66926ccf3468f60b2f0fd0e4bbae3227cdb7922ea7cd7"
+    }
+  ]
+}

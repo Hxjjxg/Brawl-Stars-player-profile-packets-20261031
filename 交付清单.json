@@ -16,8 +16,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 342,
-      "sha256": "b03e356d33616e4d23dc79bf692e44a339168697bb90c91ad278798f5e8d31d0"
+      "bytes": 430,
+      "sha256": "c5ff477ed444d9b6043da1214956e399ff11cb4bda6d7b3aa30bc3257a650fde"
     },
     {
       "path": "AGENTS.md",
@@ -343,6 +343,56 @@
       "path": "details/capture-index.json",
       "bytes": 3354,
       "sha256": "25bce10f1c4d4699a61d6b49eedfa176ae6f5c5369afd46cb0a979272ca7dfd2"
+    },
+    {
+      "path": "headless/DEBUG.md",
+      "bytes": 5861,
+      "sha256": "8e00997c5a9d49fdada4c9d858ebba48c7ec619e38174fef61b73bb61e59edb5"
+    },
+    {
+      "path": "headless/README.md",
+      "bytes": 1357,
+      "sha256": "21fe17d6e0d92408f31c8a6020ee8d78c16ef1d0c671e06aead69ccfd9c26bb8"
+    },
+    {
+      "path": "headless/capture_session.py",
+      "bytes": 4531,
+      "sha256": "c78dab443f241ecab5d0f050e501b7ee0f41f9dce3e268b86b3f3ff85d693202"
+    },
+    {
+      "path": "headless/crypto_cn.py",
+      "bytes": 2797,
+      "sha256": "de741ca2e08e9da0737fbbe218bdd92f75ef807737a6d085949e92055b2d80e5"
+    },
+    {
+      "path": "headless/menu.png",
+      "bytes": 812374,
+      "sha256": "30193e444047a8c2a51416ef8dae76e627512e79d14c2a48b56e3af579b3f320"
+    },
+    {
+      "path": "headless/native-crypto-vectors.json",
+      "bytes": 1256,
+      "sha256": "835f67f75253d53c7b6cf9bf64b4f248fd8003db415407f08e44469db17dfe03"
+    },
+    {
+      "path": "headless/probe_transport.py",
+      "bytes": 2636,
+      "sha256": "7f815668ba93d7c8a7d4206c9f23db67401c7b4b130d46ce2e389b45a6c2a846"
+    },
+    {
+      "path": "headless/query_player.py",
+      "bytes": 7199,
+      "sha256": "6e51378c75818b59503e8ea2fcd45108105a58c79ef972dbdba7d7a254976be8"
+    },
+    {
+      "path": "headless/screen-current.png",
+      "bytes": 1562372,
+      "sha256": "19658749af2055bb239f0cd01c5125ad25465f967b1def8f47010386f0173685"
+    },
+    {
+      "path": "headless/transport-observations.jsonl",
+      "bytes": 38604,
+      "sha256": "9b8a31b1ec7eaaebfc0006c1a3f7f07001a29cff1a43a81e1ff5afee407ec9f2"
     },
     {
       "path": "ida-evidence.json",
