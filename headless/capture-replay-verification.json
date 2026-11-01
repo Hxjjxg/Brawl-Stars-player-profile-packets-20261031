@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "rounds": 19,
+  "native_secretbox_samples_matched": 175,
+  "native_public_vectors": 6,
+  "capture_sha256": "63f8d52366383058e62d4a2c8958b2d150d5c5d7c26a5f7e014d31bf6e738e59",
+  "login_handshake_authenticated": true,
+  "receive_records_authenticated": 88,
+  "profile_records": [
+    {
+      "tag": "#2LPQ9G90J",
+      "body_bytes": 981
+    }
+  ]
+}

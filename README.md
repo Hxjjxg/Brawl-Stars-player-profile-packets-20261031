@@ -4,6 +4,10 @@
 
 本目录单独使用 Git 管理脚本、报告和抓包证据。接收令牌、临时运行状态与缓存由 `.gitignore` 排除；本地实际使用的采集 JS 保持原样，库内保存去除令牌的 `.template.js`。新检出仓库后，先执行 `python .\init_capture_config.py capture` 生成配套的本机 JS 和接收配置，再按下文启动；已有配置时该命令会拒绝覆盖。补测会话可用对应目录名代替 capture。原 ZIP 仅是解包来源，`original/arm64-socket` 的版本化脚本同样以模板保存。
 
+完成验证后运行 `python .\build_manifest.py` 刷新 Git 可见文件的字节数和 SHA256，再提交；它不会把被忽略的本机凭据加入清单。
+
+**新增无头查询：[Python 客户端与用法](headless/README.md)。** 游戏关闭时，Python 已自行完成新连接、握手、本人登录和三名玩家查询；当前电脑网络直连在 Hello 后被重置，成功实测使用手机作为纯 TCP 网络转发，未调用后台游戏或 Frida。当前可运行 `python .\headless\query_player.py 88GLGUC2 --via-phone-network`。完全脱离手机的当前 PC 直连尚未成功，登录材料也需要在失效后刷新，详见该说明。
+
 **完整抓包细节与字节对照：[抓包细节.md](抓包细节.md)。** 字段结构速查见 [协议结构.md](协议结构.md)；每一帧的逐字段 CSV / JSON / Markdown 在 `details/`。运行 `python .\build_details.py` 可以从原始样本重新生成这些文件。
 
 **新增实机补测：[88GLGUC2、队友与对手的补测结果](validation-88GLGUC2/补测结果.md)。** 追加 14 帧中已真实触发两次 context12 和 BattleLogEntry 分支（88 / 100 字节请求），并补齐返回中“无战队、无集合、无可选整数”的样本。原 9 帧与新增会话分别保存、分别复核。

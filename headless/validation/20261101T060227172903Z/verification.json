@@ -1,0 +1,155 @@
+{
+  "passed": true,
+  "time_utc": "20261101T060227172903Z",
+  "network": "phone-tcp-relay",
+  "authentication": "one new connection, one fresh handshake, three queries",
+  "game_process_absent_before": true,
+  "game_process_absent_after": true,
+  "frida_imported": false,
+  "queries": [
+    {
+      "tag": "#LUY2YJP",
+      "name": "胡须局锦绣谷",
+      "trophies": 54278,
+      "highest_trophies": 54278,
+      "heroes": 107,
+      "request_bytes": 11,
+      "response_bytes": 3166,
+      "response_sha256": "8add79c168a2f14e2cfdabc995dd7cdd6f983689bf88bdc3dfec3cf2c1faa3d6",
+      "all_bytes_traced": true,
+      "fully_parsed": true
+    },
+    {
+      "tag": "#88GLGUC2",
+      "name": "TIG丨初夏",
+      "trophies": 234568,
+      "highest_trophies": 234568,
+      "heroes": 108,
+      "request_bytes": 11,
+      "response_bytes": 4994,
+      "response_sha256": "6c88d6dc1ec55764cb32c8e428ce1aa43d60b3d8624a40dca7782c54359ccbe8",
+      "all_bytes_traced": true,
+      "fully_parsed": true
+    },
+    {
+      "tag": "#89V9YJ0RJ",
+      "name": "李星云",
+      "trophies": 31247,
+      "highest_trophies": 31249,
+      "heroes": 105,
+      "request_bytes": 11,
+      "response_bytes": 3316,
+      "response_sha256": "7e69d1867f86e75b886205749a6813ec2ee2db6732d5e4d2a229ae2891e0df48",
+      "all_bytes_traced": true,
+      "fully_parsed": true
+    }
+  ],
+  "sent": [
+    {
+      "id": 10100,
+      "length": 76,
+      "version": 0
+    },
+    {
+      "id": 10101,
+      "length": 630,
+      "version": 10
+    },
+    {
+      "id": 15081,
+      "length": 27,
+      "version": 0
+    },
+    {
+      "id": 15081,
+      "length": 27,
+      "version": 0
+    },
+    {
+      "id": 15081,
+      "length": 27,
+      "version": 0
+    }
+  ],
+  "received": [
+    {
+      "id": 20100,
+      "length": 28,
+      "version": 0
+    },
+    {
+      "id": 20104,
+      "length": 1012,
+      "version": 1
+    },
+    {
+      "id": 24101,
+      "length": 54375,
+      "version": 0
+    },
+    {
+      "id": 24399,
+      "length": 20,
+      "version": 0
+    },
+    {
+      "id": 49001,
+      "length": 149,
+      "version": 0
+    },
+    {
+      "id": 49001,
+      "length": 148,
+      "version": 0
+    },
+    {
+      "id": 49001,
+      "length": 149,
+      "version": 0
+    },
+    {
+      "id": 24113,
+      "length": 3182,
+      "version": 0,
+      "profile_tag": "#LUY2YJP"
+    },
+    {
+      "id": 49001,
+      "length": 147,
+      "version": 0
+    },
+    {
+      "id": 20105,
+      "length": 1033,
+      "version": 0
+    },
+    {
+      "id": 24111,
+      "length": 47,
+      "version": 0
+    },
+    {
+      "id": 24555,
+      "length": 234,
+      "version": 0
+    },
+    {
+      "id": 24555,
+      "length": 40,
+      "version": 0
+    },
+    {
+      "id": 24113,
+      "length": 5010,
+      "version": 0,
+      "profile_tag": "#88GLGUC2"
+    },
+    {
+      "id": 24113,
+      "length": 3332,
+      "version": 0,
+      "profile_tag": "#89V9YJ0RJ"
+    }
+  ],
+  "artifacts": "validation/20261101T060227172903Z"
+}

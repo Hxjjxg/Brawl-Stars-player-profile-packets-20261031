@@ -30,5 +30,14 @@
     "other fields intentionally named by native offsets",
     "response trailing VInt business meaning"
   ],
-  "capture_closed": true
+  "capture_closed": true,
+  "headless_validation": {
+    "passed": true,
+    "queries": 3,
+    "game_stayed_closed": true,
+    "network": "phone-tcp-relay",
+    "frida_imported": false,
+    "artifact": "headless/live-verification.json",
+    "phone_free_pc_transport_verified": false
+  }
 }

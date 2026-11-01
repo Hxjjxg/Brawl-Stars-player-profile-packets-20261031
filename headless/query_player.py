@@ -1,33 +1,49 @@
 """Query a CN v69 player with a standalone TCP/NaCl client; no ADB or Frida."""
 from pathlib import Path
-import argparse,hashlib,json,secrets,socket,sys,time
+import argparse,hashlib,json,secrets,socket,sys,time,http.client,urllib.parse
 sys.path.insert(0,str(Path(__file__).resolve().parent.parent))
 from protocol import decode_response,frame,request_body
 from tag_id import tag_to_id,id_to_tag
-from crypto_cn import increment,secretbox,secretbox_open,shared_key
+if __package__:
+    from .crypto_cn import increment,secretbox,secretbox_open,shared_key
+else:
+    from crypto_cn import increment,secretbox,secretbox_open,shared_key
 
 MAX_BODY=4*1024*1024
 
 class ProtocolError(RuntimeError):pass
 
 class Client:
-    def __init__(self,credentials,timeout=20):
+    def __init__(self,credentials,timeout=20,proxy=None):
         self.credentials=credentials
         self.timeout=timeout
         self.socket=None
         self.session_key=None
         self.sent=[];self.received=[]
         self.last_send=0
+        self.last_profile_response=0
+        self.proxy=proxy;self.proxy_connection=None
+
+    def __enter__(self):
+        try:self.login()
+        except BaseException:
+            self.close();raise
+        return self
+
+    def __exit__(self,*exc):self.close()
 
     def close(self):
         if self.socket is not None:
             self.socket.close();self.socket=None
         self.session_key=None
+        if self.proxy_connection:self.proxy_connection.close();self.proxy_connection=None
 
     def _send_raw(self,mid,body,version=0):
         if len(body)>MAX_BODY:raise ProtocolError('Outgoing record too large')
         self.socket.sendall(frame(mid,body,version))
-        self.sent.append({'id':mid,'length':len(body),'version':version})
+        row={'id':mid,'length':len(body),'version':version}
+        if mid==15081:row['frame_hex']=frame(mid,body,version).hex()
+        self.sent.append(row)
         self.last_send=time.monotonic()
 
     def _exact(self,length,deadline):
@@ -46,7 +62,9 @@ class Client:
         mid=int.from_bytes(head[:2],'big');length=int.from_bytes(head[2:5],'big');version=int.from_bytes(head[5:],'big')
         if length>MAX_BODY:raise ProtocolError('Incoming record too large')
         body=self._exact(length,deadline)
-        self.received.append({'id':mid,'length':length,'version':version})
+        row={'id':mid,'length':length,'version':version}
+        if mid==24113:row['frame_hex']=(head+body).hex()
+        self.received.append(row)
         return mid,body,version
 
     def login(self):
@@ -54,7 +72,14 @@ class Client:
         c=self.credentials
         server_public=bytes.fromhex(c['server_public'])
         if len(server_public)!=32:raise ValueError('server_public must contain 32 bytes')
-        self.socket=socket.create_connection((c['host'],int(c.get('port',9339))),timeout=self.timeout)
+        if self.proxy:
+            proxy=urllib.parse.urlsplit(self.proxy)
+            if proxy.scheme!='http' or not proxy.hostname or proxy.username:
+                raise ValueError('Expected an HTTP CONNECT proxy URL without embedded credentials')
+            self.proxy_connection=http.client.HTTPConnection(proxy.hostname,proxy.port or 8080,timeout=self.timeout)
+            self.proxy_connection.set_tunnel(c['host'],int(c.get('port',9339)))
+            self.proxy_connection.connect();self.socket=self.proxy_connection.sock
+        else:self.socket=socket.create_connection((c['host'],int(c.get('port',9339))),timeout=self.timeout)
         self.socket.setsockopt(socket.IPPROTO_TCP,socket.TCP_NODELAY,1)
         deadline=time.monotonic()+self.timeout
         self._send_raw(10100,bytes.fromhex(c['client_hello']),int(c.get('hello_version',0)))
@@ -89,6 +114,9 @@ class Client:
 
     def query(self,tag):
         target=id_to_tag(*tag_to_id(tag))
+        if self.last_profile_response:
+            delay=self.last_profile_response+2-time.monotonic()
+            if delay>0:time.sleep(delay)
         body=request_body(target)
         self.send(15081,body)
         deadline=time.monotonic()+self.timeout
@@ -96,7 +124,9 @@ class Client:
             mid,payload,version=self.receive(deadline)
             if mid==24113:
                 decoded=decode_response(payload)
+                self.received[-1]['profile_tag']=decoded['profile']['tag']
                 if decoded['profile']['tag']==target:
+                    self.last_profile_response=time.monotonic()
                     return decoded,{'request_body_hex':body.hex(),'response_body_hex':payload.hex(),
                                     'response_version':version,'sent':list(self.sent),'received':list(self.received)}
             if mid==20103:raise ProtocolError('Server returned login failure during query')
@@ -108,28 +138,46 @@ def main():
     p.add_argument('tag')
     p.add_argument('--credentials',type=Path,default=Path(__file__).resolve().parent/'private'/'login-material.json')
     p.add_argument('--timeout',type=float,default=20)
+    p.add_argument('--connect-host',help='Override only the TCP destination, for a transparent relay')
+    p.add_argument('--connect-port',type=int,help='TCP destination port when using a relay')
+    p.add_argument('--proxy',help='Optional HTTP CONNECT proxy URL')
+    p.add_argument('--via-phone-network',action='store_true',help='Use only Android networking as a temporary TCP relay; game stays closed')
+    p.add_argument('--serial',help='Android device for --via-phone-network')
     p.add_argument('--output',type=Path,help='Save the complete decoded public profile as JSON')
     p.add_argument('--evidence',type=Path,help='Save only profile request/response and record metadata; no login credentials')
     a=p.parse_args()
     client=None
+    relay=None
     try:
         tag_to_id(a.tag)
         if not 0<a.timeout<=120:raise ValueError('timeout must be between 0 and 120 seconds')
         credentials=json.loads(a.credentials.read_text(encoding='utf-8'))
-        client=Client(credentials,a.timeout);client.login();decoded,evidence=client.query(a.tag)
+        if a.via_phone_network:
+            if a.proxy or a.connect_host or a.connect_port:raise ValueError('Choose one network transport')
+            if __package__:from .phone_network import PhoneNetwork
+            else:from phone_network import PhoneNetwork
+            relay=PhoneNetwork(credentials['host'],credentials.get('port',9339),a.serial).__enter__()
+            credentials={**credentials,'host':'127.0.0.1','port':relay.local_port}
+        if a.connect_host:credentials['host']=a.connect_host
+        if a.connect_port is not None:
+            if not 1<=a.connect_port<=65535:raise ValueError('Invalid TCP port')
+            credentials['port']=a.connect_port
+        client=Client(credentials,a.timeout,a.proxy);client.login();decoded,evidence=client.query(a.tag)
         profile=decoded['profile'];stats={x['key']:x['value'] for x in profile['stats']}
         result={'tag':profile['tag'],'name':profile['display']['name'],'trophies':stats.get(3),
                 'highest_trophies':stats.get(4),'heroes':len(profile['heroes']),
-                'transport':'standalone-python-tcp','response_id':24113}
+                'transport':'standalone-python-tcp','network':('phone-tcp-relay' if relay else 'http-connect' if a.proxy else 'tcp'),
+                'response_id':24113}
         if a.output:a.output.write_text(json.dumps(decoded,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         if a.evidence:
             evidence.update(result=result,time_utc=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()))
             a.evidence.write_text(json.dumps(evidence,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         print(json.dumps(result,ensure_ascii=False,indent=2))
         return 0
-    except (OSError,ValueError,KeyError,ProtocolError) as error:
+    except (OSError,ValueError,KeyError,RuntimeError,http.client.HTTPException) as error:
         print(f'Query failed: {error}',file=sys.stderr);return 1
     finally:
         if client:client.close()
+        if relay:relay.__exit__(None,None,None)
 
 if __name__=='__main__':raise SystemExit(main())

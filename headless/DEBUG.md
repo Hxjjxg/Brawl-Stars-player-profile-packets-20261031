@@ -60,6 +60,24 @@ The game was stopped after hooks were detached. First standalone attempt to the 
 - Conflicts: the observed IP:port was the exact active game socket.
 - Test: inspect configured game host strings and DNS, then compare only verified alternative endpoints.
 
+### Network conclusion and live result
+
+Phone packet capture contains no extra preamble: the exact 83-byte Hello matches Python byte-for-byte and gets a 20100 response. An independent Android netcat process also gets 20100. PC is on WLAN/campus routing, while phone uses cellular. The user's existing system HTTP proxy routes Chinese destinations directly; a separate temporary proxy using its configured upstream also returned EOF. Its process was stopped and its temporary credential copy removed without modifying the existing proxy.
+
+Through an optional loopback-only phone TCP relay, with the game force-stopped, standalone Python successfully performed fresh logins and queried #LUY2YJP and #88GLGUC2. This proves game/session independence, but successful phone-free PC transport on the current network has not been established. Direct TCP and HTTP CONNECT remain selectable transports.
+
+## Multiple queries in one session
+
+An additional API test got the first profile, then timed out waiting for the second, requested 0.5 seconds later. Separate fresh CLI sessions had both worked. No multi-query success is claimed yet.
+
+- M1: the server applies a short per-session profile-query cooldown. Supports: second immediate request fails while independent logins work; natural UI actions are slower. Test: change only inter-query delay from 0.5 to 2 seconds.
+- M2: idle sessions need heartbeats or a turn flush. Supports: normal game sends periodic heartbeats; current code sends one only after receiving other records. Conflicts: the first query succeeded before a heartbeat. Test if M1 fails: add one heartbeat before the next query, leaving delay unchanged.
+- M3: a different tag response was received and filtered. Supports: the client waits for an exact target ID. Conflicts: both tested tags already worked in fresh sessions. Test: retain returned public profile tags alongside message metadata.
+
+### Multi-query conclusion
+
+Changing only the inter-query wait to 2 seconds made all three requests succeed in one new login, while the game stayed stopped. The client now conservatively waits 2 seconds after the previous successful profile response before sending another query. The exact server threshold and policy are not claimed. A regression test checks this wait; the live verification then removes its external sleep to test the client's own pacing.
+
 ## Scope
 
 Target is a standalone Python client, with reuse of the user's own login token if necessary. A phone-backed bridge would not meet the preferred outcome. Any recovered session credentials must stay under ignored `headless/private/` and must not be printed or committed.

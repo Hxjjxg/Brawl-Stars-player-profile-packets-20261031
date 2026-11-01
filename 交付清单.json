@@ -1,5 +1,5 @@
 {
-  "format": "player-profile-analysis-v4",
+  "format": "player-profile-analysis-v5",
   "game_version": "69.114.1",
   "messages": [
     15081,
@@ -31,13 +31,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 10439,
-      "sha256": "64f1f10f980cd2fd820832926cd6998ebb7798466663120fe25345c2e7d1f360"
+      "bytes": 11108,
+      "sha256": "6687ae4234669e369fecc3e23932fc49945503981f2c43097a5ac7fd7efbbc4f"
     },
     {
       "path": "build_details.py",
       "bytes": 12800,
       "sha256": "79193269e97d4856d9dec27200c879902a8fe9abcd22dcf10b78d93a1ca09375"
+    },
+    {
+      "path": "build_manifest.py",
+      "bytes": 1399,
+      "sha256": "98f186e675b2236029bf7d7b04ea831db2e7da00db116ec14745f4d6240d6c4c"
     },
     {
       "path": "capture/PlayerProfileCapture.template.js",
@@ -111,8 +116,8 @@
     },
     {
       "path": "combined-verification.json",
-      "bytes": 872,
-      "sha256": "65227272fbfd9131a12fc6a10c3a72cbb993aa2307b314ec0919c5c9d58409cf"
+      "bytes": 1143,
+      "sha256": "74f2c4d5a598266823d459d53da0bbe8927bb17e2989d6c6897697e09fe2d5ce"
     },
     {
       "path": "details/01-c2s-15081-decoded.json",
@@ -345,24 +350,74 @@
       "sha256": "25bce10f1c4d4699a61d6b49eedfa176ae6f5c5369afd46cb0a979272ca7dfd2"
     },
     {
+      "path": "headless/88GLGUC2-decoded.json",
+      "bytes": 124179,
+      "sha256": "b8e10983ce1cb075bc8fe5a9b2a33dbc37d3cb7dc36f1ebd5ad515fc9cb89043"
+    },
+    {
+      "path": "headless/88GLGUC2-query-evidence.json",
+      "bytes": 11357,
+      "sha256": "67f4b36231b2e01256492c4eba3866416950a880459a134e8b758a0fc3136021"
+    },
+    {
+      "path": "headless/89V9YJ0RJ-decoded.json",
+      "bytes": 102545,
+      "sha256": "34e27d71bc89c20c7bf566116c2d68c5def2d5700b8db8c598b3d22ff96fc875"
+    },
+    {
+      "path": "headless/89V9YJ0RJ-query-evidence.json",
+      "bytes": 14596,
+      "sha256": "c0e02553098c92ac3e1363d2d36ea961b1e6517946f6aa129f81a57ae7b1b954"
+    },
+    {
       "path": "headless/DEBUG.md",
-      "bytes": 5861,
-      "sha256": "8e00997c5a9d49fdada4c9d858ebba48c7ec619e38174fef61b73bb61e59edb5"
+      "bytes": 8224,
+      "sha256": "3400fdea0dd9d57fd236df4a46ba12cbb221d2cfaa481feea63ac4a947cc7288"
+    },
+    {
+      "path": "headless/LUY2YJP-decoded.json",
+      "bytes": 100178,
+      "sha256": "e0d316badedd03b1ed279001751df680b6a5abc289d602362f61691adaa33eb6"
+    },
+    {
+      "path": "headless/LUY2YJP-query-evidence.json",
+      "bytes": 7439,
+      "sha256": "a82d01e5fd6e78e2629d273a27e14028a52441aed6db67e33626237ccc1827d0"
     },
     {
       "path": "headless/README.md",
-      "bytes": 1357,
-      "sha256": "21fe17d6e0d92408f31c8a6020ee8d78c16ef1d0c671e06aead69ccfd9c26bb8"
+      "bytes": 8744,
+      "sha256": "d01fa5c8951a730a8170a2eec4f4777f85bea901f18e3022553e9710272c46e9"
+    },
+    {
+      "path": "headless/__init__.py",
+      "bytes": 81,
+      "sha256": "19d43bd4f5c7bbb63533ad1387cfe3a5a9f105a4df823ad4eec25b906a542edd"
+    },
+    {
+      "path": "headless/capture-replay-verification.json",
+      "bytes": 384,
+      "sha256": "bdbc71ff555b8635967278e19d2a4435e61e1457c0e60e58cae3ed5ab98c3254"
     },
     {
       "path": "headless/capture_session.py",
-      "bytes": 4531,
-      "sha256": "c78dab443f241ecab5d0f050e501b7ee0f41f9dce3e268b86b3f3ff85d693202"
+      "bytes": 4926,
+      "sha256": "4c2816dd713992452e8a5805d291ed7020221d0c64f038d2020babbf770727e9"
     },
     {
       "path": "headless/crypto_cn.py",
       "bytes": 2797,
       "sha256": "de741ca2e08e9da0737fbbe218bdd92f75ef807737a6d085949e92055b2d80e5"
+    },
+    {
+      "path": "headless/extract_login.py",
+      "bytes": 3789,
+      "sha256": "2576c1006954bb1b6ae000f42ad207bdec1653de59880fcf47ac702f51469d15"
+    },
+    {
+      "path": "headless/live-verification.json",
+      "bytes": 3153,
+      "sha256": "00c581f0273fab0a668f7f141ade4d5df5f8b67767d48c3dfd875512713919fc"
     },
     {
       "path": "headless/menu.png",
@@ -375,24 +430,129 @@
       "sha256": "835f67f75253d53c7b6cf9bf64b4f248fd8003db415407f08e44469db17dfe03"
     },
     {
+      "path": "headless/phone_network.py",
+      "bytes": 3489,
+      "sha256": "864475c56dad7b4d0c7eff5df9c1414a85120ce68bf87adc0d249ea0ef5da6e1"
+    },
+    {
       "path": "headless/probe_transport.py",
       "bytes": 2636,
       "sha256": "7f815668ba93d7c8a7d4206c9f23db67401c7b4b130d46ce2e389b45a6c2a846"
     },
     {
       "path": "headless/query_player.py",
-      "bytes": 7199,
-      "sha256": "6e51378c75818b59503e8ea2fcd45108105a58c79ef972dbdba7d7a254976be8"
+      "bytes": 10018,
+      "sha256": "d3df0c37882904a167cb13c216d6f6ee2598fc8580eaa9e6bab0f1d0710968e6"
+    },
+    {
+      "path": "headless/requirements.txt",
+      "bytes": 14,
+      "sha256": "aac473472844ea1e964b310725ebdf933067097a4bc11a833de985fe217d9d8c"
     },
     {
       "path": "headless/screen-current.png",
-      "bytes": 1562372,
-      "sha256": "19658749af2055bb239f0cd01c5125ad25465f967b1def8f47010386f0173685"
+      "bytes": 1543646,
+      "sha256": "5e31e2515510ce11c70ca2b9cfa3f6ed56f7b8f5c3ed29efbf5c7c2c22fcf0ef"
+    },
+    {
+      "path": "headless/test_headless.py",
+      "bytes": 3689,
+      "sha256": "88c93a868e593b0d4e88f54f7e8b48b01d0cbbba49a5910a4cac403a97aaaa28"
     },
     {
       "path": "headless/transport-observations.jsonl",
       "bytes": 38604,
       "sha256": "9b8a31b1ec7eaaebfc0006c1a3f7f07001a29cff1a43a81e1ff5afee407ec9f2"
+    },
+    {
+      "path": "headless/validation/20261101T060028546727Z/01-LUY2YJP-decoded.json",
+      "bytes": 100178,
+      "sha256": "e0d316badedd03b1ed279001751df680b6a5abc289d602362f61691adaa33eb6"
+    },
+    {
+      "path": "headless/validation/20261101T060028546727Z/01-LUY2YJP-evidence.json",
+      "bytes": 7483,
+      "sha256": "76d26ee12023a1daab3fb14c4756c1253459cbd8f52afd998b8dab07f335e973"
+    },
+    {
+      "path": "headless/validation/20261101T060028546727Z/failure.json",
+      "bytes": 322,
+      "sha256": "db9538f983b6c45ea876d4a350909ccb0297d30efdc23674305b7495dcf9ba10"
+    },
+    {
+      "path": "headless/validation/20261101T060227172903Z/01-LUY2YJP-decoded.json",
+      "bytes": 100178,
+      "sha256": "b8772c3001f64f2fcb94fcd7ef43511666f4ad352947ae1984c3e2eda279552a"
+    },
+    {
+      "path": "headless/validation/20261101T060227172903Z/01-LUY2YJP-evidence.json",
+      "bytes": 7362,
+      "sha256": "23809009908ea321af7482d69aeb201c20421d2cf937d9f9a907f581b84f2cec"
+    },
+    {
+      "path": "headless/validation/20261101T060227172903Z/02-88GLGUC2-decoded.json",
+      "bytes": 124179,
+      "sha256": "1798c28557414aa369451be18566fe0c5fd1dc4edccff54a15fa24b7100d2686"
+    },
+    {
+      "path": "headless/validation/20261101T060227172903Z/02-88GLGUC2-evidence.json",
+      "bytes": 11591,
+      "sha256": "64e430c035193210ac956d9619e1dafec3406ffd58329b04b099097b97ca9342"
+    },
+    {
+      "path": "headless/validation/20261101T060227172903Z/03-89V9YJ0RJ-decoded.json",
+      "bytes": 102545,
+      "sha256": "34e27d71bc89c20c7bf566116c2d68c5def2d5700b8db8c598b3d22ff96fc875"
+    },
+    {
+      "path": "headless/validation/20261101T060227172903Z/03-89V9YJ0RJ-evidence.json",
+      "bytes": 8425,
+      "sha256": "e17ccb8bea6527b8e7bfb64acc2e30c0f4568712a91b3f68c8a4ac44eba51f4e"
+    },
+    {
+      "path": "headless/validation/20261101T060227172903Z/verification.json",
+      "bytes": 3153,
+      "sha256": "d94317463198a4256561440d64808c3adba7c3d611cd36ef661ed7d141b62e6a"
+    },
+    {
+      "path": "headless/validation/20261101T060420335730Z/01-LUY2YJP-decoded.json",
+      "bytes": 100178,
+      "sha256": "b8772c3001f64f2fcb94fcd7ef43511666f4ad352947ae1984c3e2eda279552a"
+    },
+    {
+      "path": "headless/validation/20261101T060420335730Z/01-LUY2YJP-evidence.json",
+      "bytes": 7517,
+      "sha256": "ea76a73e5d6de84759dcbc86871f885f602bcbb1e9af2a9e245942d70e644dd3"
+    },
+    {
+      "path": "headless/validation/20261101T060420335730Z/02-88GLGUC2-decoded.json",
+      "bytes": 124179,
+      "sha256": "6954ff5e27536662124961c1083a7af4ca3e708f6fc6c7ade480d57f57c47304"
+    },
+    {
+      "path": "headless/validation/20261101T060420335730Z/02-88GLGUC2-evidence.json",
+      "bytes": 11438,
+      "sha256": "a1c377b00b60180700cae5b32b4d614b82ab14eb396ba6e06d7a094eb8585489"
+    },
+    {
+      "path": "headless/validation/20261101T060420335730Z/03-89V9YJ0RJ-decoded.json",
+      "bytes": 102545,
+      "sha256": "69ab1f046f2f82503a2b51075b50ab9e65ec919d26bb1664a00a5d492b94f050"
+    },
+    {
+      "path": "headless/validation/20261101T060420335730Z/03-89V9YJ0RJ-evidence.json",
+      "bytes": 8425,
+      "sha256": "b9fe5956d3155bfa05847fa1e0cd707d121eaa1f492fa0214e2452edac032754"
+    },
+    {
+      "path": "headless/validation/20261101T060420335730Z/verification.json",
+      "bytes": 3153,
+      "sha256": "00c581f0273fab0a668f7f141ade4d5df5f8b67767d48c3dfd875512713919fc"
+    },
+    {
+      "path": "headless/verify_live.py",
+      "bytes": 3921,
+      "sha256": "e5b839032d44b5c90aa036c361fcc62dec52ceb365dd06b99c42960b591679ee"
     },
     {
       "path": "ida-evidence.json",
@@ -1731,5 +1891,13 @@
       "low": 577840
     }
   ],
-  "repository_note": "Versioned artifact inventory; local credentials, runtime state and caches excluded. Git preserves exact file bytes."
+  "repository_note": "Versioned artifact inventory; local credentials, runtime state and caches excluded. Git preserves exact file bytes.",
+  "headless": {
+    "passed": true,
+    "queries_in_one_session": 3,
+    "game_process_absent": true,
+    "network": "phone-tcp-relay",
+    "phone_free_pc_transport_verified": false,
+    "verification": "headless/live-verification.json"
+  }
 }

@@ -1,0 +1,9 @@
+{
+  "passed": false,
+  "source": "observed console traceback from first multi-query experiment",
+  "error": "TimeoutError",
+  "message": "timed out",
+  "stage": "waiting for second profile after a 0.5-second inter-query delay",
+  "first_query_saved": "LUY2YJP",
+  "complete_transport_metadata_available": false
+}

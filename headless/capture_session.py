@@ -14,6 +14,8 @@ session.on('detached',lambda reason,crash:(print(json.dumps({'detached':reason})
 source=r'''
 const m=Process.getModuleByName('libg.so'),hooks=[],current=new Map();let fd=-1;
 const hex=(p,n)=>Array.from(new Uint8Array(p.readByteArray(n))).map(x=>x.toString(16).padStart(2,'0')).join('');
+const expected={'0xb09078':'ff8302d1fd7b04a9fb2b00f9fa6706a9','0xb08634':'fd7bbaa9fc0b00f9fa6702a9f85f03a9','0x9d8f08':'fd7bbba9fa6701a9f85f02a9f65703a9','0x18d1974':'fd7bbea9f44f01a9fd030091f30300aa','0xad3efc':'6f028052'};
+for(const [offset,bytes] of Object.entries(expected))if(hex(m.base.add(ptr(offset)),bytes.length/2)!==bytes)throw new Error('Unsupported native fingerprint at '+offset);
 const rel=p=>p.sub(m.base).toString();
 const emit=d=>send({...d,time:new Date().toISOString()});
 hooks.push(Interceptor.attach(m.base.add(0xb09078),{onEnter(args){
