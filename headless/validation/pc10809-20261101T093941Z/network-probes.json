@@ -1,0 +1,23 @@
+[
+  {
+    "target": "52.83.179.16",
+    "mode": "socks5-10809",
+    "socks_reply_code": 0,
+    "error": "ConnectionError",
+    "message": "EOF after tunnel established"
+  },
+  {
+    "target": "52.83.90.66",
+    "mode": "socks5-10809",
+    "socks_reply_code": 0,
+    "error": "ConnectionError",
+    "message": "EOF after tunnel established"
+  },
+  {
+    "target": "161.189.28.62",
+    "mode": "socks5-10809",
+    "socks_reply_code": 0,
+    "error": "ConnectionError",
+    "message": "EOF after tunnel established"
+  }
+]

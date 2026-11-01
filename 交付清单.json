@@ -371,8 +371,8 @@
     },
     {
       "path": "headless/DEBUG.md",
-      "bytes": 8224,
-      "sha256": "3400fdea0dd9d57fd236df4a46ba12cbb221d2cfaa481feea63ac4a947cc7288"
+      "bytes": 9872,
+      "sha256": "1ea2c72e1ed2250b02bd4cb578ea44f0f8e852165e2a263ac90b4ba2e25ef14b"
     },
     {
       "path": "headless/LUY2YJP-decoded.json",
@@ -386,8 +386,8 @@
     },
     {
       "path": "headless/README.md",
-      "bytes": 8744,
-      "sha256": "d01fa5c8951a730a8170a2eec4f4777f85bea901f18e3022553e9710272c46e9"
+      "bytes": 9057,
+      "sha256": "8cd8ddcedf3ee54990297bb2c0d59a52f05113aad06671c7fcac4fb73ffd6cd0"
     },
     {
       "path": "headless/__init__.py",
@@ -548,6 +548,26 @@
       "path": "headless/validation/20261101T060420335730Z/verification.json",
       "bytes": 3153,
       "sha256": "00c581f0273fab0a668f7f141ade4d5df5f8b67767d48c3dfd875512713919fc"
+    },
+    {
+      "path": "headless/validation/pc10809-20261101T093941Z/force-upstream-control.json",
+      "bytes": 234,
+      "sha256": "0d21b8e165687e592a3ae3d0dc455eb1ffa0cb07d26349dbd910a71f3346f6d6"
+    },
+    {
+      "path": "headless/validation/pc10809-20261101T093941Z/network-probes.json",
+      "bytes": 542,
+      "sha256": "f154094320f445940f6990280b3b026cf1c50a7d6e33b806918e313dd4352806"
+    },
+    {
+      "path": "headless/validation/pc10809-20261101T093941Z/verification.json",
+      "bytes": 254,
+      "sha256": "4ac3e9ad34f110918ccb888edd7f227c9bd60e16669ba4471a2122c878a2cb79"
+    },
+    {
+      "path": "headless/validation/pc10809-20261101T093941Z/测试结果.md",
+      "bytes": 2538,
+      "sha256": "593d3e9173842e78e31aa1c801b5e47470016b6b33f236891df3ac81c3996c5e"
     },
     {
       "path": "headless/verify_live.py",

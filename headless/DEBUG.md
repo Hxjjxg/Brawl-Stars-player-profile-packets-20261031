@@ -78,6 +78,18 @@ An additional API test got the first profile, then timed out waiting for the sec
 
 Changing only the inter-query wait to 2 seconds made all three requests succeed in one new login, while the game stayed stopped. The client now conservatively waits 2 seconds after the previous successful profile response before sending another query. The exact server threshold and policy are not claimed. A regression test checks this wait; the live verification then removes its external sleep to test the client's own pacing.
 
+## User-requested PC proxy 10809 test — 2026-11-01 17:39–17:44 China time
+
+Observed: 10809 is a listening Xray mixed inbound. An actual HTTP-CONNECT Client login attempt sent only 10100 and got EOF, with no received game records. SOCKS5 negotiation returned 0500 and CONNECT succeeded for both the domain and each of the three previously verified production IPs, but all game Hello probes then got EOF. HTTPS through the same port works; its Cloudflare control reported loc=JP.
+
+Hypotheses and experiments:
+
+- P1: Chinese-target direct routing still selects the campus network. Supports: current configuration has geoip:cn/geosite:cn direct rules. Test: a separate loopback-only instance using the configured proxy outbound, allowing only the game domain/IPs and port. Result: also EOF after Hello; changing only this route is not a sufficient repair. The temporary process/config were removed and original config bytes verified unchanged.
+- P2: proxy-side DNS selects a different server. Supports: the domain is resolved by the proxy. Test: SOCKS CONNECT to all three verified numeric IPs. Result: same EOF; DNS alone does not explain the failure.
+- P3: the upstream/exit path or game endpoint rejects this connection. Supports: proxy negotiation and ordinary HTTPS succeed, game traffic fails before 20100 even with forced proxy routing. Conflicts: exact rejection origin is not observable in this test. Conclusion: this remains the network boundary; no unproven crypto/token fix was made.
+
+All observations were recorded without using a phone. No 10101/token was sent. Detailed results: validation/pc10809-20261101T093941Z/测试结果.md.
+
 ## Scope
 
 Target is a standalone Python client, with reuse of the user's own login token if necessary. A phone-backed bridge would not meet the preferred outcome. Any recovered session credentials must stay under ignored `headless/private/` and must not be printed or committed.

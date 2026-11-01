@@ -1,0 +1,14 @@
+{
+  "passed": false,
+  "network": "pc-http-connect-10809",
+  "error": "ConnectionError",
+  "message": "Server closed the connection",
+  "sent": [
+    {
+      "id": 10100,
+      "length": 76,
+      "version": 0
+    }
+  ],
+  "received": []
+}

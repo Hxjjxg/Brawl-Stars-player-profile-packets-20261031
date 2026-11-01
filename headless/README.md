@@ -39,6 +39,8 @@ python .\headless\query_player.py 88GLGUC2 --proxy http://127.0.0.1:10808
 
 HTTP 代理需要允许 CONNECT 到游戏 9339 端口。当前电脑已有代理及一次隔离代理测试也未成功，不能仅凭本地代理端口处于监听就认定它可用。没有修改用户已有代理配置。
 
+2026-11-01 17:39 起又按用户指定补测了 **10809**：HTTP CONNECT、SOCKS5 和三台服务器 IP 均在游戏 Hello 后 EOF，普通 HTTPS 对照成功，强制走节点的隔离对照仍失败。尚未到 token 阶段，详见 [10809 测试结果](validation/pc10809-20261101T093941Z/测试结果.md)。
+
 安装依赖：`python -m pip install -r .\headless\requirements.txt`。`--output` 保存完整解析树；`--evidence` 另存查询明文、资料查询/返回的实际加密 frame 和消息编号/长度等元数据，不保存登录包、session key 或 nonce。
 
 ## 已验证的数据
